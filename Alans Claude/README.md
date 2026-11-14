@@ -8,13 +8,13 @@ memory by the *token*, and the same message costs more tokens in some languages 
 English. LinguaBridge measures that "language tax" for Spanish, Hindi, Mandarin, Arabic and
 Kurmanji, and gets speakers a better answer by bridging through English when that helps.
 
-![The Language Tax tab](demo/linguabridge/screenshots/tab1_language_tax.png)
+![LinguaBridge: a Kurmanji sentence cut into tokens, with the extra ones marked as the language tax](demo/linguabridge/screenshots/app_measure_kurmanji.png)
 
 ## What's in here
 
 | Folder | What it is | Status |
 | --- | --- | --- |
-| `demo/linguabridge/` | The app (Gradio), the evaluation, the Colab notebook | Tab 1 and 3 tested; tab 2 and `evaluate.py` need a Colab GPU |
+| `demo/linguabridge/` | The app (`server.py` + `web/`), the evaluation, the Colab notebook | Measure and Evidence tested in a browser; Ask and `evaluate.py` need a Colab GPU |
 | `experiments/language_tax/` | The token-tax pilot results for six languages | Run |
 | `experiments/scambreaker/` | Attacking the organisers' sample scam filter | Run; results in `results.txt` |
 | `experiments/pumpguard/` | Check of the pump-and-dump dataset | Run; results in `results.txt` |
@@ -44,14 +44,38 @@ worse, and whether bridging fixes it, is measured by `evaluate.py`, which has no
 **Colab (recommended):** open `demo/linguabridge/LinguaBridge_Colab.ipynb`, set the runtime to
 T4 GPU, and run the cells in order.
 
-**Locally (tabs 1 and 3 only, no GPU):**
+**Locally (Measure and Evidence work without a GPU):**
 
 ```bash
 cd "Alans Claude/demo/linguabridge"
 pip install -r requirements.txt
 pip install --no-deps llama-models
-python app.py
+python server.py
 ```
+
+Then open http://127.0.0.1:8000. `python app.py --share` runs a simpler Gradio version that can
+give a public link.
+
+## The app
+
+Three sections, one shared language choice (Spanish, Hindi, Mandarin, Arabic, Kurmanji, plus
+English as the baseline):
+
+- **Measure the tax.** Your message is cut into the tokens a model sees. The tokens English
+  would also need stay grey; the extra ones turn red. That red part is the language tax. Below
+  it, the same message on each model generation.
+- **Ask in your language.** One question, two routes: direct, and bridged through English with a
+  translation model. Both answers appear side by side, with what the model was asked in English.
+- **The evidence.** The tax for each language across model generations, the table behind it, how
+  we measured, and what the pilot does not show yet.
+
+The design follows two public skill playbooks, impeccable and better-ui: one type family, two
+colours that each mean one thing (red for the tax, teal for the bridge), contrast checked in
+light and dark themes, keyboard support, and reduced-motion support.
+
+| | |
+| --- | --- |
+| ![Hindi on a 2023 model: 72 tokens against 14 in English](demo/linguabridge/screenshots/app_measure_hindi_2023_model.png) | ![The evidence section](demo/linguabridge/screenshots/app_evidence.png) |
 
 ## Next steps for the team
 

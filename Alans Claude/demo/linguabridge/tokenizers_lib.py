@@ -9,7 +9,10 @@ or account: Llama 3, Llama 4 (Meta's `llama-models`) and two Mistral ones
 from __future__ import annotations
 
 import os
+import re
 from typing import Callable, Dict
+
+_BYTE_PIECE = re.compile(r"<0x[0-9A-Fa-f]{2}>")  # SentencePiece byte-fallback tokens
 
 # The regular expressions Meta's own code uses to pre-split text before BPE.
 LLAMA3_PATTERN = (
@@ -39,6 +42,20 @@ class Tok:
     def pieces(self, text: str):
         """The text cut into the pieces the model actually sees."""
         return [self._piece(i) for i in self.ids(text)]
+
+    def detail(self, text: str):
+        """Like pieces(), but marks tokens that hold only PART of a character.
+
+        Some tokenizers split a single letter (for example a Hindi or Chinese
+        character) into several byte-sized tokens. Those cannot be shown as
+        text, so we flag them instead of printing a broken character.
+        """
+        out = []
+        for i in self.ids(text):
+            piece = self._piece(i)
+            partial = "\ufffd" in piece or bool(_BYTE_PIECE.fullmatch(piece.strip()))
+            out.append({"t": "" if partial else piece, "partial": partial})
+        return out
 
 
 def _pkg_file(pkg: str, rel: str) -> str:

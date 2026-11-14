@@ -1,5 +1,7 @@
 gradio
 pandas
+fastapi
+uvicorn
 tiktoken
 sentencepiece
 mistral-common

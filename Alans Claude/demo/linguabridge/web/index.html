@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinguaBridge</title>
+  <meta name="description" content="See what your language costs on AI models, and get a better answer anyway.">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="wordmark" href="/" aria-label="LinguaBridge home">
+      <svg viewBox="0 0 28 20" width="28" height="20" aria-hidden="true">
+        <path d="M2 16c4-12 20-12 24 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2 16h24M9 9.5V16M14 7.2V16M19 9.5V16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>LinguaBridge</span>
+    </a>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="tab-measure" aria-controls="view-measure" aria-selected="true">Measure the tax</button>
+      <button role="tab" id="tab-ask" aria-controls="view-ask" aria-selected="false" tabindex="-1">Ask in your language</button>
+      <button role="tab" id="tab-evidence" aria-controls="view-evidence" aria-selected="false" tabindex="-1">The evidence</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ───────────── Measure ───────────── -->
+    <section id="view-measure" role="tabpanel" aria-labelledby="tab-measure">
+      <div class="intro">
+        <h1>What does your language cost?</h1>
+        <p>AI models read text in pieces called tokens. They charge by the piece, and their memory fills up by the piece. The same message takes more pieces in some languages than in English.</p>
+      </div>
+
+      <fieldset class="langs" id="langs-measure">
+        <legend>Your language</legend>
+        <!-- language chips are rendered here -->
+      </fieldset>
+
+      <div class="composer">
+        <label for="message">Your message</label>
+        <textarea id="message" rows="2" spellcheck="false" autocomplete="off"></textarea>
+        <div class="composer-row">
+          <button type="button" class="quiet" id="next-example">Try another sentence</button>
+          <span class="hint" id="basis-hint"></span>
+        </div>
+      </div>
+
+      <div class="result" id="result" aria-live="polite">
+        <h2 id="headline"></h2>
+        <p class="sub" id="subline"></p>
+
+        <div class="strip-block">
+          <div class="strip-head">
+            <span id="strip-title">Your message, as the model sees it</span>
+            <span class="count" id="strip-count"></span>
+          </div>
+          <div class="strip" id="strip"></div>
+        </div>
+
+        <div class="strip-block" id="english-block" hidden>
+          <div class="strip-head">
+            <span>The same meaning in English</span>
+            <span class="count" id="english-count"></span>
+          </div>
+          <div class="strip" id="english-strip"></div>
+        </div>
+
+        <ul class="legend" id="legend"></ul>
+      </div>
+
+      <fieldset class="models" id="models">
+        <legend>The same message on each model</legend>
+        <!-- model rows are rendered here -->
+      </fieldset>
+    </section>
+
+    <!-- ───────────── Ask ───────────── -->
+    <section id="view-ask" role="tabpanel" aria-labelledby="tab-ask" hidden>
+      <div class="intro">
+        <h1>Ask it your way, or take the bridge</h1>
+        <p>Two routes to the same AI model. <strong>Direct</strong>: the model reads your question as you wrote it. <strong>Bridged</strong>: we translate it to English, ask, and translate the answer back.</p>
+      </div>
+
+      <fieldset class="langs" id="langs-ask">
+        <legend>Your language</legend>
+      </fieldset>
+
+      <div class="composer">
+        <label for="question">Your question</label>
+        <textarea id="question" rows="2" spellcheck="false" autocomplete="off"></textarea>
+        <div class="composer-row">
+          <button type="button" class="primary" id="ask-btn">Ask both ways</button>
+          <span class="hint" id="route-hint"></span>
+        </div>
+      </div>
+
+      <div class="notice" id="ask-notice" hidden></div>
+
+      <div class="answers" id="answers" hidden>
+        <article class="answer" id="answer-direct">
+          <header><h2>Direct</h2><span class="count" id="direct-tokens"></span></header>
+          <p class="answer-text" id="direct-text"></p>
+        </article>
+        <article class="answer bridged" id="answer-bridged">
+          <header><h2>Bridged through English</h2><span class="count" id="bridged-tokens"></span></header>
+          <p class="answer-text" id="bridged-text"></p>
+          <dl class="trace">
+            <dt>What the model was asked</dt><dd id="bridged-en-q"></dd>
+            <dt>What it answered</dt><dd id="bridged-en-a"></dd>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── Evidence ───────────── -->
+    <section id="view-evidence" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+      <div class="intro">
+        <h1>Newer models lowered the tax for some languages, not all</h1>
+        <p>Tokens needed for the same 12 sentences, as a multiple of English. Each line is one of our languages across four tokenizers released between 2023 and 2025.</p>
+      </div>
+
+      <fieldset class="langs" id="langs-evidence">
+        <legend>Follow one language</legend>
+      </fieldset>
+
+      <figure class="chart">
+        <div id="chart" role="img"></div>
+        <figcaption id="chart-caption"></figcaption>
+      </figure>
+
+      <div class="table-wrap">
+        <table id="tax-table">
+          <caption>Times the English token count, per model</caption>
+        </table>
+      </div>
+
+      <div class="prose">
+        <h2>How we measured</h2>
+        <p>We wrote 12 everyday sentences, such as a doctor's instruction and a bus fare, in six languages. For each tokenizer we counted the tokens for all 12 and divided by the English count. The tokenizers are the real ones shipped by Meta and Mistral.</p>
+
+        <h2>What this does not show yet</h2>
+        <ul>
+          <li>Twelve sentences is a pilot. The full run uses the 1,012 professionally translated sentences of the FLORES+ dataset.</li>
+          <li>The sentences were translated with AI help. Each of us is checking our own language.</li>
+          <li>Token count is the cost. Whether answers also get worse, and whether the bridge fixes it, is measured separately on the Belebele reading test.</li>
+          <li id="routes-status"></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A prototype for the Veritas AI Hackathon 2026, Languages track.</p>
+  </footer>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
