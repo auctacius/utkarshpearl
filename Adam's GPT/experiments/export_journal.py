@@ -6,8 +6,8 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
 P=Path(__file__).resolve().parents[1]
 styles=getSampleStyleSheet()
-styles['BodyText'].fontSize=9.5
-styles['BodyText'].leading=13
+styles['BodyText'].fontSize=9
+styles['BodyText'].leading=12
 styles['BodyText'].spaceAfter=6
 styles['BodyText'].splitLongWords=True
 story=[]

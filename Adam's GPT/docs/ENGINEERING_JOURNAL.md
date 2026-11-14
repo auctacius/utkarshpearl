@@ -36,5 +36,8 @@ Record prepared at 2026-11-14T19:22:51.273266+00:00. Phase files will be publish
 
 PDF QA: rendered the initial three-page PDF and inspected all pages; detected a paragraph split onto a sparse last page, adjusted line spacing and margins for a more compact export. Text extraction check accounts for pagination footers.
 
+## Verified publication - 2026-11-14 19:24:41 UTC
+Phase commit 2f2ac4866cde6c49cbd96bccbb32f1ebecf37f04 published to main via create_blob, create_tree, create_commit and update_ref with expected parent d9fa9e381d3e570414eadf08bf544bdcd89ba61c, force=false. All 22 remote file blob hashes matched local files on independent fetch_file readback, including the PDF. Final PDF QA: two pages visually inspected; zero missing journal lines after excluding page footers. The initial extraction assertion failed because it incorrectly removed body text with the footer; correcting the check confirmed completeness. This publication record and refreshed PDF are a documentation follow-up to that verified phase commit.
+
 ## Remaining requirements and next phase
 Implement and actually run a learned multilingual detector; verify and pin its license/revision/dependencies. Acquire an independent licensed benchmark with useful Kurmanji coverage, validate offset/label mapping, and freeze grouped splits before tuning. Get students to review code, contribute documented changes, check language examples and explain all components. Confirm fluent-language reviewers. Prepare accessible submission code/write-up and a short demo before deadline. Current private repository is not anonymously accessible. No submission, public sharing or success/ranking claim has been made.
