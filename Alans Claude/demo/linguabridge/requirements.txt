@@ -1,0 +1,11 @@
+gradio
+pandas
+tiktoken
+sentencepiece
+mistral-common
+# llama-models is installed separately with --no-deps (see the notebook);
+# we only need the tokenizer files it ships.
+# For tab 2 and evaluate.py (Colab already has torch):
+transformers
+accelerate
+datasets

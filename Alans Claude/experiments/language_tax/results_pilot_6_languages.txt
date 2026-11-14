@@ -1,0 +1,11 @@
+  skipped GPT-4o: ProxyError: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max re
+  skipped Qwen 2.5: ModuleNotFoundError: No module named 'transformers'
+Loaded tokenizers: Mistral 7B v1, Llama 3, Mistral Tekken, Llama 4
+
+Tokens needed for the same 12 sentences, as a multiple of English:
+
+tokenizer           English    Spanish      Hindi   Mandarin     Arabic   Kurmanji Kurmanji (
+Mistral 7B v1         1.00x      1.53x      4.41x      1.41x      3.32x      2.15x      1.81x
+Llama 3               1.00x      1.33x      2.22x      1.02x      1.40x      2.01x      1.70x
+Mistral Tekken        1.00x      1.20x      1.55x      1.11x      1.09x      1.91x      1.64x
+Llama 4               1.00x      1.12x      1.43x      0.88x      1.39x      1.87x      1.60x

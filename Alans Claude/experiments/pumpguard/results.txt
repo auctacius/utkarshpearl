@@ -1,0 +1,11 @@
+rows, columns: (482157, 17)
+pump starts (gt = 1): 317
+
+pump starts by year:
+ year
+2018     91
+2019    102
+2020    110
+2021     14
+
+coins in 2018-19: 67, in 2020-21: 55, only in 2020-21: 18

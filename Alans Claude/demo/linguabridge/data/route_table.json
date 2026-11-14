@@ -1,0 +1,9 @@
+{
+  "_status": "PROVISIONAL: a guess from the token-tax pilot only. Run evaluate.py in Colab to replace it with measured accuracy.",
+  "English": {"route": "direct", "direct_accuracy": null, "bridged_accuracy": null},
+  "Spanish": {"route": "direct", "direct_accuracy": null, "bridged_accuracy": null},
+  "Hindi": {"route": "bridged", "direct_accuracy": null, "bridged_accuracy": null},
+  "Mandarin": {"route": "direct", "direct_accuracy": null, "bridged_accuracy": null},
+  "Arabic": {"route": "bridged", "direct_accuracy": null, "bridged_accuracy": null},
+  "Kurmanji": {"route": "bridged", "direct_accuracy": null, "bridged_accuracy": null}
+}

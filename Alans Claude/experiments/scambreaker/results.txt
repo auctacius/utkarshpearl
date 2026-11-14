@@ -1,0 +1,34 @@
+== reproduce_sample_model.py
+repro precision 0.952 recall 0.926
+114 caught printable spams
+
+== attack_sample_model.py
+before  after  verdict
+  0.94   0.49  MISSED  | Hi, this is Sarah from the customer rewards team. Your account came ou
+  0.97   0.11  MISSED  | Hello, we've tried to reach you a couple of times about the £2,000 tha
+  0.94   0.50  caught  | Good news from Vodafone: your number has been chosen for a £350 thank-
+  0.99   0.69  caught  | Your name was drawn this week and there's £1000 set aside for you. Our
+  0.51   0.32  MISSED  | Your holiday voucher includes two first class airport lounge passes. T
+  0.96   0.22  MISSED  | Sorry to bother you again, we still haven't been able to pass on the £
+  0.92   0.50  caught  | Fancy a go at this week's £250 competition? It costs nothing to enter,
+  0.89   0.68  caught  | Struggling to get approved for a loan? We arrange anything from £500 t
+  0.99   0.86  caught  | Your mobile number has been allocated £2000 in our monthly draw. Pleas
+  0.97   0.67  caught  | Hello, you've been selected for a £200 award, and it could be as much 
+  0.91   0.38  MISSED  | As a thank you for being with us so long, we'd like to give you £900. 
+  0.94   0.19  MISSED  | Hi, following up about the £2,000 bonus that was allocated to your num
+  0.98   0.61  caught  | We've been trying to get hold of you. Your number came up in today's d
+  0.95   0.88  caught  | Following our call from 08702490080: to release the £5000 owed to you,
+  0.97   0.39  MISSED  | We can upgrade you to a new video phone with 750 minutes and 150 texts
+  0.96   0.84  caught  | There's a £250 prize up for grabs this week and entry is on us. Reply 
+  0.91   0.78  caught  | Two new 3G video phones have been reserved in your name, with no line 
+  0.92   0.41  MISSED  | Want cheaper calls to family in Germany? Dial 0844 861 85 85 first fro
+  0.92   0.77  caught  | We're auctioning a brand new Nokia 7250 today and joining costs nothin
+  0.93   0.82  caught  | Congratulations to Mr T. Foley, who won this week's iPod. More prizes 
+
+Disguised scams that slip past the sample's final model: 8/20
+Same scams with look-alike characters only (no AI): 14/20 slip past
+
+== character_model_check.py
+char model precision 1.000 recall 0.940
+char model, reworded: 3 /20 slip past
+char model, look-alikes: 0 /20 slip past
