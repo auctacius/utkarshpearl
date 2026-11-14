@@ -1,0 +1,21 @@
+test_bad_offsets (test_pipeline.PipelineTests.test_bad_offsets) ... ok
+test_boundaries (test_pipeline.PipelineTests.test_boundaries) ... ok
+test_dataset (test_pipeline.PipelineTests.test_dataset) ... ok
+test_devanagari_digits (test_pipeline.PipelineTests.test_devanagari_digits) ... ok
+test_email (test_pipeline.PipelineTests.test_email) ... ok
+test_empty (test_pipeline.PipelineTests.test_empty) ... ok
+test_exact_scoring (test_pipeline.PipelineTests.test_exact_scoring) ... ok
+test_local_phone_limitation (test_pipeline.PipelineTests.test_local_phone_limitation) ... ok
+test_multiple_redactions (test_pipeline.PipelineTests.test_multiple_redactions) ... ok
+test_name_limitation (test_pipeline.PipelineTests.test_name_limitation) ... ok
+test_negatives (test_pipeline.PipelineTests.test_negatives) ... ok
+test_overlap (test_pipeline.PipelineTests.test_overlap) ... ok
+test_repeat (test_pipeline.PipelineTests.test_repeat) ... ok
+test_undefined (test_pipeline.PipelineTests.test_undefined) ... ok
+test_unicode_offsets (test_pipeline.PipelineTests.test_unicode_offsets) ... ok
+test_wrong_label (test_pipeline.PipelineTests.test_wrong_label) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
