@@ -18,6 +18,6 @@ for line in (P/'docs/ENGINEERING_JOURNAL.md').read_text().splitlines():
     story.append(Paragraph(escape(line.lstrip('#').strip()) if level else escape(line),style))
 def footer(c,d):
     c.setFillColor(colors.HexColor('#526176'));c.setFont('Helvetica',8)
-    c.drawString(42,24,'PIIParity | Engineering journal | Phase 1')
+    c.drawString(42,24,'PIIParity | Engineering journal | Phases 1-2')
     c.drawRightString(570,24,str(d.page))
 SimpleDocTemplate(str(P/'reports/PIIParity_Engineering_Journal.pdf'),pagesize=(612,792),rightMargin=42,leftMargin=42,topMargin=36,bottomMargin=36).build(story,onFirstPage=footer,onLaterPages=footer)

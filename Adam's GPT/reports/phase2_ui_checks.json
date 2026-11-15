@@ -1,0 +1,229 @@
+{
+  "timestamp": "2026-11-15T05:36:25.063721+00:00",
+  "checks": [
+    {
+      "language": "English",
+      "mode": "Hybrid",
+      "seconds": 7.4202900000382215,
+      "redacted": "[PERSON] lives in [LOCATION]. Email [EMAIL] or call [PHONE].",
+      "entities": [
+        {
+          "start": 0,
+          "end": 10,
+          "label": "PERSON",
+          "text": "Mira Patel",
+          "score": 0.9929403066635132,
+          "source": "ai"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "label": "LOCATION",
+          "text": "London",
+          "score": 0.9704006314277649,
+          "source": "ai"
+        },
+        {
+          "start": 34,
+          "end": 50,
+          "label": "EMAIL",
+          "text": "mira@example.com",
+          "score": null,
+          "source": "regex"
+        },
+        {
+          "start": 59,
+          "end": 74,
+          "label": "PHONE",
+          "text": "+1-202-555-0100",
+          "score": null,
+          "source": "regex"
+        }
+      ]
+    },
+    {
+      "language": "Kurmanji (experimental)",
+      "mode": "Hybrid",
+      "seconds": 0.2794572500279173,
+      "redacted": "Navê min [PERSON] Azad e. Ez li [LOCATION] dijîm. E-name: [EMAIL].",
+      "entities": [
+        {
+          "start": 9,
+          "end": 12,
+          "label": "PERSON",
+          "text": "Roj",
+          "score": 0.9758301973342896,
+          "source": "ai"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "label": "LOCATION",
+          "text": "Amedê",
+          "score": 0.9765905141830444,
+          "source": "ai"
+        },
+        {
+          "start": 48,
+          "end": 63,
+          "label": "EMAIL",
+          "text": "roj@example.com",
+          "score": null,
+          "source": "regex"
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "mode": "Hybrid",
+      "seconds": 0.11200349999126047,
+      "redacted": "मेरा नाम [PERSON] है। मैं [LOCATION] में रहती हूँ। ईमेल: [EMAIL]।",
+      "entities": [
+        {
+          "start": 9,
+          "end": 18,
+          "label": "PERSON",
+          "text": "आशा शर्मा",
+          "score": 0.987280011177063,
+          "source": "ai"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "label": "LOCATION",
+          "text": "दिल्ली",
+          "score": 0.9315619468688965,
+          "source": "ai"
+        },
+        {
+          "start": 54,
+          "end": 70,
+          "label": "EMAIL",
+          "text": "asha@example.com",
+          "score": null,
+          "source": "regex"
+        }
+      ]
+    },
+    {
+      "language": "Simplified Chinese",
+      "mode": "Hybrid",
+      "seconds": 0.12015650002285838,
+      "redacted": "我叫[PERSON]，住在[LOCATION]。我的邮箱是 [EMAIL]。",
+      "entities": [
+        {
+          "start": 2,
+          "end": 4,
+          "label": "PERSON",
+          "text": "李明",
+          "score": 0.9793581366539001,
+          "source": "ai"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "label": "LOCATION",
+          "text": "北京",
+          "score": 0.9406246542930603,
+          "source": "ai"
+        },
+        {
+          "start": 16,
+          "end": 34,
+          "label": "EMAIL",
+          "text": "liming@example.com",
+          "score": null,
+          "source": "regex"
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "mode": "Hybrid",
+      "seconds": 0.11374379193875939,
+      "redacted": "Me llamo [PERSON] y vivo en [LOCATION]. Correo: [EMAIL].",
+      "entities": [
+        {
+          "start": 9,
+          "end": 21,
+          "label": "PERSON",
+          "text": "Lucía Torres",
+          "score": 0.9917790293693542,
+          "source": "ai"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "label": "LOCATION",
+          "text": "Madrid",
+          "score": 0.9701456427574158,
+          "source": "ai"
+        },
+        {
+          "start": 48,
+          "end": 65,
+          "label": "EMAIL",
+          "text": "lucia@example.com",
+          "score": null,
+          "source": "regex"
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "mode": "Hybrid",
+      "seconds": 0.1666742090601474,
+      "redacted": "Benim adım [PERSON]. [LOCATION] yaşıyorum. E-posta: [EMAIL].",
+      "entities": [
+        {
+          "start": 11,
+          "end": 23,
+          "label": "PERSON",
+          "text": "Deniz Yılmaz",
+          "score": 0.9931746125221252,
+          "source": "ai"
+        },
+        {
+          "start": 25,
+          "end": 40,
+          "label": "LOCATION",
+          "text": "Ankara şehrinde",
+          "score": 0.8841020464897156,
+          "source": "ai"
+        },
+        {
+          "start": 61,
+          "end": 78,
+          "label": "EMAIL",
+          "text": "deniz@example.com",
+          "score": null,
+          "source": "regex"
+        }
+      ]
+    },
+    {
+      "language": "English",
+      "mode": "Regex",
+      "redacted": "Mira Patel lives in London. Email [EMAIL] or call [PHONE]."
+    },
+    {
+      "language": "English",
+      "mode": "AI",
+      "redacted": "[PERSON] lives in [LOCATION]. Email mira@example.com or call [PHONE]."
+    },
+    {
+      "case": "empty",
+      "passed": true
+    },
+    {
+      "case": "non_sensitive",
+      "passed": true
+    },
+    {
+      "case": "overlong",
+      "passed": true,
+      "error": "Use a short paragraph: maximum 1,500 characters. Nothing was processed."
+    }
+  ],
+  "total": 11
+}

@@ -35,6 +35,6 @@ test_han_offsets (test_system.TokenizationTests.test_han_offsets) ... ok
 test_multiscript_lossless (test_system.TokenizationTests.test_multiscript_lossless) ... ok
 
 ----------------------------------------------------------------------
-Ran 35 tests in 0.004s
+Ran 35 tests in 0.007s
 
 OK

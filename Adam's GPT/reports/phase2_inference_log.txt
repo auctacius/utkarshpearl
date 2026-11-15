@@ -1,4 +1,4 @@
-2026-11-14 13:57:58.204 python[22438:11690461] 2026-11-14 13:57:58.204080 [W:onnxruntime:Default, telemetry_1ds.cc:613 operator()] Failed to persist telemetry device ID; using an in-memory identifier
+2026-11-14 23:35:36.920 python[44661:12061785] 2026-11-14 23:35:36.920857 [W:onnxruntime:Default, telemetry_1ds.cc:613 operator()] Failed to persist telemetry device ID; using an in-memory identifier
 config.json not found in <project>/data/models/gliner
 <project>/.venv/lib/python3.12/site-packages/transformers/convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
   warnings.warn(
@@ -9,11 +9,5 @@ Hindi मेरा नाम [PERSON] है। मैं [LOCATION] में �
 Simplified Chinese 我叫[PERSON]，住在[LOCATION]。我的邮箱是 liming@example.com。
 Spanish Me llamo [PERSON] y vivo en [LOCATION]. Correo: [EMAIL].
 Turkish Benim adım [PERSON]. [LOCATION] yaşıyorum. E-posta: [EMAIL].
-2026-11-14 13:58:07.236 python[22438:11690464] NetworkStorageDB:_openDBReadConnections: failed to open read connection to DB @ <user-cache>/python/Cache.db.  Error=14. Cause=unable to open database file
-2026-11-14 13:58:07.236 python[22438:11690464] The read-connection to the DB=<user-cache>/python/Cache.db is NOT valid.  Unable to determine schema version.
-2026-11-14 13:58:07.236 python[22438:11690464] NetworkStorageDB:_openDBWriteConnections: failed to open write connection to DB @ <user-cache>/python/Cache.db.  Error=14. Cause=unable to open database file
-2026-11-14 13:58:07.236 python[22438:11690464] DEBUG: there is no SQL cache DB located at <user-cache>/python/Cache.db.
-2026-11-14 13:58:07.236 python[22438:11690464] DEBUG: there is no SQL cache DB located at <user-cache>/python/Cache.db-shm.
-2026-11-14 13:58:07.236 python[22438:11690464] DEBUG: there is no SQL cache DB located at <user-cache>/python/Cache.db-wal.
 AI {'tp': 21, 'fp': 14, 'fn': 21, 'precision': 0.6, 'recall': 0.5, 'f1': 0.5454545454545454}
 Hybrid {'tp': 31, 'fp': 14, 'fn': 11, 'precision': 0.6888888888888889, 'recall': 0.7380952380952381, 'f1': 0.7126436781609196}

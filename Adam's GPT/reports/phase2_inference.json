@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-14T19:58:05.764686+00:00",
+  "timestamp": "2026-11-15T05:35:44.403121+00:00",
   "model": "urchade/gliner_multi-v2.1",
   "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
-  "load_seconds": 7.626801166916266,
+  "load_seconds": 7.85102800000459,
   "examples": [
     {
       "language": "English",
       "text": "Mira Patel lives in London. Email mira@example.com or call +1-202-555-0100.",
-      "seconds": 0.2693509589880705,
+      "seconds": 0.09593979094643146,
       "results": {
         "Regex": {
           "mode": "Regex",
@@ -120,7 +120,7 @@
     {
       "language": "Kurmanji (experimental)",
       "text": "Navê min Roj Azad e. Ez li Amedê dijîm. E-name: roj@example.com.",
-      "seconds": 0.04058508307207376,
+      "seconds": 0.0379756250185892,
       "results": {
         "Regex": {
           "mode": "Regex",
@@ -216,7 +216,7 @@
     {
       "language": "Hindi",
       "text": "मेरा नाम आशा शर्मा है। मैं दिल्ली में रहती हूँ। ईमेल: asha@example.com।",
-      "seconds": 0.03959979105275124,
+      "seconds": 0.037678207969293,
       "results": {
         "Regex": {
           "mode": "Regex",
@@ -312,7 +312,7 @@
     {
       "language": "Simplified Chinese",
       "text": "我叫李明，住在北京。我的邮箱是 liming@example.com。",
-      "seconds": 0.03812391706742346,
+      "seconds": 0.04068279103375971,
       "results": {
         "Regex": {
           "mode": "Regex",
@@ -400,7 +400,7 @@
     {
       "language": "Spanish",
       "text": "Me llamo Lucía Torres y vivo en Madrid. Correo: lucia@example.com.",
-      "seconds": 0.03466583299450576,
+      "seconds": 0.03488470893353224,
       "results": {
         "Regex": {
           "mode": "Regex",
@@ -496,7 +496,7 @@
     {
       "language": "Turkish",
       "text": "Benim adım Deniz Yılmaz. Ankara şehrinde yaşıyorum. E-posta: deniz@example.com.",
-      "seconds": 0.03733529103919864,
+      "seconds": 0.03708270797505975,
       "results": {
         "Regex": {
           "mode": "Regex",

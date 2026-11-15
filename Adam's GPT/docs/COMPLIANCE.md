@@ -9,7 +9,7 @@ Project Briefs: https://drive.google.com/file/d/15tYD48XRmCgWbk1_lLDtc8lebi6qm-4
 - [x] Language-separated metrics and ground-truth/prediction examples implemented.
 - [x] Baseline limitations and actual results disclosed.
 - [x] AI assistance and sources recorded in CREDITS.md.
-- [ ] AI central to main task: NOT MET by regex. Add and run an actual learned multilingual entity detector in the next phase. Coding with AI is insufficient (Brief p3).
+- [x] AI central to main task: Phase 2 actually executed pretrained GLiNER for detection and integrated it into the local UI. Regex is preserved as a comparator (Brief p3).
 - [ ] Student contributions and understanding: user chose project and corrected language scope; no student code review, implementation or linguistic validation has yet been verified. Every listed student must contribute and explain the project (Guide section 10; Brief p3, p21).
 - [ ] Fluent-speaker checks (Brief p17): reviewers not identified yet.
 - [ ] Independent evaluation dataset and frozen splits, honest unseen-data results.
