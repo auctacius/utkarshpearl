@@ -101,6 +101,30 @@ EN_NUMBER_WORDS = {
 }
 _EN_WORD_RE = re.compile(r"\b(" + "|".join(EN_NUMBER_WORDS) + r")\b", re.IGNORECASE)
 
+# Match Chinese number words before common label units. This avoids reading the
+# 一 in 一旦 (once something happens) as a dose or frequency.
+_ZH_VALUES = {char: value for value, char in enumerate("零一二三四五六七八九")}
+_ZH_VALUES.update({"两": 2, "兩": 2, "半": 0.5, "一半": 0.5})
+_ZH_NUMBER = r"(?:一半|[一二三四五六七八九]?十[一二三四五六七八九]?|[零一二两兩三四五六七八九半])"
+_ZH_QUANTITY_RE = re.compile(
+    rf"(?<![A-Za-z0-9.零一二两兩三四五六七八九十百千万萬亿億半])"
+    rf"({_ZH_NUMBER})\s*(?=(?:次(?!性)|片|药丸|藥丸|粒|顆|颗|錠|锭|劑|剂|小時|小时|分鐘|分钟|"
+    rf"天|日|週|周|歲|岁|毫升|毫克|克|滴|茶匙|湯匙|汤匙|杯|度|%|％|°|mL|mg))",
+    re.IGNORECASE,
+)
+
+
+def _zh_word_values(text: str) -> list[float]:
+    """Read Chinese label quantities written as half, single digits, or tens."""
+    values = []
+    for word in _ZH_QUANTITY_RE.findall(text):
+        if "十" in word:
+            tens, ones = word.split("十")
+            values.append(10 * _ZH_VALUES.get(tens, 1) + _ZH_VALUES.get(ones, 0))
+        else:
+            values.append(_ZH_VALUES[word])
+    return values
+
 
 def _digit_values(ascii_text: str) -> list[float]:
     """Read every number written with digits and return its value."""
@@ -128,16 +152,18 @@ def extract_numbers(text: str, lang: str = "en", use_words: bool = False) -> lis
 
     - Digits from any script are understood (2, ٢, २, ２ all mean 2).
     - For English (lang == "en") number words such as "twice" or "half" also count.
-    - For other languages only digits count in this first version (use_words is a STRETCH goal).
+    - Chinese label quantities also count when use_words=True. Hindi and Arabic use digits only.
     We keep a SET of numbers (not a count) so "1 tablet at 8 a.m. and 1 tablet at 8 p.m." and a
     translation that says "1 tablet at 8 a.m. and 8 p.m." are treated as the same.
     """
-    if use_words and lang != "en":
+    if use_words and lang not in ("en", "zh"):
         raise NotImplementedError("STRETCH: target-side number words (see briefs/BRIEF_chinese_checks.md)")
     text = text.translate(_INVISIBLE)
     values = _digit_values(to_ascii_digits(text))
     if lang == "en":
         values += [EN_NUMBER_WORDS[w.lower()] for w in _EN_WORD_RE.findall(text)]
+    elif lang == "zh" and use_words:
+        values += _zh_word_values(to_ascii_digits(text))
     return sorted({round(float(v), 4) for v in values})
 
 
@@ -148,7 +174,7 @@ def number_check(src_en: str, tgt: str, lang: str) -> dict:
     extra (in translation but not in English), flag (True if anything differs).
     """
     src = extract_numbers(src_en, "en")
-    tgt_nums = extract_numbers(tgt, lang)
+    tgt_nums = extract_numbers(tgt, lang, use_words=(lang == "zh"))
     missing = sorted(set(src) - set(tgt_nums))
     extra = sorted(set(tgt_nums) - set(src))
     return {
