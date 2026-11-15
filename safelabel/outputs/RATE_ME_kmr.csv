@@ -1,0 +1,61 @@
+﻿sentence_id,lang,system,src_en,translation,verdict,error_type,corrected_translation,note,rater_id
+S001,kmr,nllb600m,Take 2 tablets with a full glass of water.,2 tablet bi şûşeyek avê bi temamî bigirin.,,,,,kmr_
+S002,kmr,nllb600m,Take one tablet every 8 hours.,Her 8 demjimêrî yek tablet bixwe.,,,,,kmr_
+S003,kmr,nllb600m,Do not take more than 6 tablets in 24 hours.,Di 24 demjimêran de bêtirî 6 tabletan bigirin.,,,,,kmr_
+S004,kmr,nllb600m,Do not crush or chew the tablets.,Tabletan neşewitîne û neşewitîne.,,,,,kmr_
+S005,kmr,nllb600m,Take this medicine with food.,Ev derman ligel xwarinê bixwe.,,,,,kmr_
+S006,kmr,nllb600m,"Use for 7 days, even if you feel better.","7 rojan bikar bînin, her çiqas tu baştir bibî.",,,,,kmr_
+S007,kmr,nllb600m,Measure 5 mL with the dosing cup provided.,5 ml bi cup dosing dayîn pîvandin.,,,,,kmr_
+S008,kmr,nllb600m,Children under 12 years should not take this medicine without asking a doctor.,Zarokên di bin 12 salî de divê vê dermanê bêyî ku ji doktorê re bipirsin qebûl neke.,,,,,kmr_
+S009,kmr,nllb600m,Call your doctor if your fever lasts more than 3 days.,"Eger germîya we ji 3 rojan zêdetir bimîne, bi doktorê xwe re biaxivin.",,,,,kmr_
+S010,kmr,nllb600m,Store below 25 °C and keep out of the reach of children.,Di bin 25 °C de bêne peydakirin û ji destê zarokan re nehêlin.,,,,,kmr_
+S011,kmr,nllb600m,"If you miss a dose, take it as soon as you remember.","Heke hûn dozek ji dest bixin, dema ku hûn bi bîr bînin, ew bigirin.",,,,,kmr_
+S012,kmr,nllb600m,Do not take two doses at the same time.,Du dozan di heman demê de nekevin.,,,,,kmr_
+S013,kmr,nllb600m,Apply a thin layer to the affected skin twice a day.,Di rojê de du caran plastîkeke hişk li ser çermê bandorkirî bişînin.,,,,,kmr_
+S014,kmr,nllb600m,For use in the ear only.,Bi tenê ji bo bikaranîna li guhê.,,,,,kmr_
+S015,kmr,nllb600m,Take half a tablet in the morning.,Sibehê nîvê tabletekê bixwe.,,,,,kmr_
+S016,kmr,nllb600m,Take 1 tablet at 8 a.m. and 1 tablet at 8 p.m.,1 tablet di 8 êvarê de û 1 tablet di 8 êvarê de bigirin.,,,,,kmr_
+S017,kmr,nllb600m,Take 1 to 2 tablets every 4 to 6 hours as needed.,Li gorî pêwîstî her 4 heta 6 saetan 1 heta 2 tabletan bigirin.,,,,,kmr_
+S018,kmr,nllb600m,Do not exceed 4 doses in a 24-hour period.,Di dema 24 saetan de 4 dozan nekeve.,,,,,kmr_
+S019,kmr,nllb600m,Avoid alcohol while taking this medicine.,Di dema ku vê dermanê digirin de alkolê dûr bixe.,,,,,kmr_
+S020,kmr,nllb600m,Do not use if you are pregnant or breastfeeding.,"Ger hûn di serî de neyên bikaranîn, ger hûn di serî de neyên bikaranîn û ger hûn di serî de neyên bikaranîn.",,,,,kmr_
+S021,kmr,nllb600m,Do not take with other medicines that contain the same active ingredient.,Ne digel dermanên din ên ku heman maddeya çalak dihewîne.,,,,,kmr_
+S022,kmr,nllb600m,Do not use for more than 3 days without medical advice.,Bêyî şêwirmendîya bijîşk bêtirî 3 rojan bikar bînin.,,,,,kmr_
+S023,kmr,nllb600m,Take 1/2 teaspoon (2.5 mL) twice daily.,1/2 teaspoon (2. 5 ml) du caran di rojekê de bigirin.,,,,,kmr_
+S024,kmr,nllb600m,"Apply the 0.5% cream to clean, dry skin.","Creamê 0,5% li ser çermê paqij û hişk bişînin.",,,,,kmr_
+S025,kmr,nllb600m,Dissolve 1 packet in a glass of water and drink right away.,Pakêta 1 di şûşeyek avê de hilweşîne û di cih de vexwin.,,,,,kmr_
+S026,kmr,nllb600m,The dose is 10 mL for children weighing 20 to 30 kg.,"Doza ji bo zarokên ku giraniya wan 20 heta 30 kg e, 10 ml e.",,,,,kmr_
+S027,kmr,nllb600m,Each tablet contains 20 mg of Zolvera.,Her tabletekê 20 mg Zolvera heye.,,,,,kmr_
+S028,kmr,nllb600m,Take once daily at bedtime.,Yek car di rojê de di dema xewê de bigirin.,,,,,kmr_
+S029,kmr,nllb600m,Shake the bottle well before each use.,Berî her bikaranîna şûşeyek bi başî hilweşînin.,,,,,kmr_
+S030,kmr,nllb600m,Put 2 drops in each eye 3 times a day.,Di rojê de 3 caran 2 drop li her çavê de bişînin.,,,,,kmr_
+S031,kmr,nllb600m,Wait at least 4 hours between doses.,Di navbera dozan de herî kêm 4 saetan bimînin.,,,,,kmr_
+S032,kmr,nllb600m,Swallow the capsule whole with water.,Kapsulê bi avê bi temamî bişewitîne.,,,,,kmr_
+S033,kmr,nllb600m,Avoid direct sunlight while using this cream.,Di dema bikaranîna vê krîmê de ji ronahiya rojê ya rasterast dûr bikevin.,,,,,kmr_
+S034,kmr,nllb600m,This medicine may cause drowsiness. Do not drive or use machines.,Ev derman dibe sedema xewbûnê.,,,,,kmr_
+S035,kmr,nllb600m,Keep in the refrigerator between 2 °C and 8 °C.,Di nav 2 °C û 8 °C de di sargehê de bimînin.,,,,,kmr_
+S036,kmr,nllb600m,Do not use after the expiry date printed on the box.,"Piþtî dema bidawîbûna wê ku li ser kaxezê hatiye çapkirin, ne bikar bînin.",,,,,kmr_
+S037,kmr,nllb600m,Stop taking this medicine and call your doctor if you develop a rash.,"Ger hûn dermanê bigirin, ji vê dermanê dûr bixin û eger hûn derman çêbikin, ji doktorê xwe re biaxivin.",,,,,kmr_
+S038,kmr,nllb600m,Take for 10 days. Finish all the tablets.,10 rojan bigirin. Hemû tabletan bi dawî bikin.,,,,,kmr_
+S039,kmr,nllb600m,Not recommended for babies under 6 months.,Ji bo zarokên di bin 6 mehan de pêşniyar nayê kirin.,,,,,kmr_
+S040,kmr,nllb600m,Take 1 tablet every 12 hours for 5 days.,Di 5 rojan de her 12 demjimêran de 1 tablet bigirin.,,,,,kmr_
+S041,kmr,nllb600m,"Take 3 tablets on the first day, then 1 tablet a day for 4 days.","Di roja yekemîn de 3 tabletan bigirin, piştre 4 rojan rojekê 1 tabletê bigirin.",,,,,kmr_
+S042,kmr,nllb600m,Rinse your mouth with water after using the inhaler.,Piştî bikaranîna inhalerê devê xwe bi av bişkînin.,,,,,kmr_
+S043,kmr,nllb600m,Use 2 puffs when needed. Do not use more than 8 puffs in 24 hours.,"Gava pêwîst e, 2 gavan bikar bînin. di 24 demjimêran de 8 gavan zêdetir ne bikar bînin.",,,,,kmr_
+S044,kmr,nllb600m,Take 1 capsule 30 minutes before breakfast.,1 kapsulê 30 deqîqe berî sibehê bixwe.,,,,,kmr_
+S045,kmr,nllb600m,"Take this medicine on an empty stomach, at least 1 hour before meals.","Ev derman li ser zikê vala, herî kêm 1 demjimêr berî xwarinê bixwe.",,,,,kmr_
+S046,kmr,nllb600m,Place the tablet under your tongue and let it dissolve.,Tabletê di bin zimanê xwe de bişîne û bihêle ku hilweşîne.,,,,,kmr_
+S047,kmr,nllb600m,Do not stop taking this medicine suddenly.,"Ji ber ku hûn di dermanê de ne, ew derman bi hîngê rawestînin.",,,,,kmr_
+S048,kmr,nllb600m,Your urine may look orange. This is harmless.,Dibe ku þewata te rengê orange bibîne. Ev bêzar e.,,,,,kmr_
+S049,kmr,nllb600m,"Use only the dosing cup, not a kitchen spoon.","Tenê şûşeyeka dozê bikar bînin, ne lûpeke xwarinê.",,,,,kmr_
+S050,kmr,nllb600m,"Take 2 tablets now, then 1 tablet after 12 hours.",Niha 2 tablet û piştî 12 saetan jî 1 tablet bixwe.,,,,,kmr_
+S051,kmr,nllb600m,"If your symptoms get worse or do not improve in 5 days, see a doctor.","Heke nîşanên we xirabtir bibin an jî di 5 rojan de baştir nebin, li doktorê binêrin.",,,,,kmr_
+S052,kmr,nllb600m,Give 7.5 mL to a child aged 6 to 11 years.,7. 5 ml bide zarokekî 6 heta 11 salî.,,,,,kmr_
+S053,kmr,nllb600m,Wash your hands before and after applying the ointment.,Destên xwe berî û piştî avakirina zeytûnê bişewitîne.,,,,,kmr_
+S054,kmr,nllb600m,Do not apply to broken skin or near the eyes.,Ne li ser çermê şikestî an li nêzîkî çavên.,,,,,kmr_
+S055,kmr,nllb600m,Take 1 tablet every morning. The tablet strength is 40 mg.,Her sibê 1 tablet bigirin.,,,,,kmr_
+S056,kmr,nllb600m,Allow 2 hours between this medicine and antacids.,Di navbera vê dermanê û antacids de 2 demjimêran bigirin.,,,,,kmr_
+S057,kmr,nllb600m,Tell your doctor about all other medicines you take.,Derbarê hemû dermanên din ên ku hûn diçin de ji doktorê xwe re bêjin.,,,,,kmr_
+S058,kmr,nllb600m,This medicine is for adults over 18 years only.,Ev derman tenê ji bo mezinên ser 18 salî ye.,,,,,kmr_
+S059,kmr,nllb600m,"Take 2 sachets daily, mixed with 200 mL of water.","Di rojekê de 2 sachets bigirin, bi 200 mL avê re tevlihev bikin.",,,,,kmr_
+S060,kmr,nllb600m,Seek emergency help right away if you have trouble breathing or swelling of the face.,"Ger hûn nexweşîya nefesê an jî rûyê we bişewitîne, di cih de alîkarîya awarte bixwazin.",,,,,kmr_
