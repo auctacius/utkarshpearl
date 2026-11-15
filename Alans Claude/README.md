@@ -1,94 +1,66 @@
 # Alan's Claude section
 
-Everything from Alan's planning session with Claude on Saturday, November 14, 2026, for the
-Veritas AI International High School Hackathon 2026.
+Work from Alan's sessions with Claude for the Veritas AI International High School Hackathon
+2026 (submissions close Sunday, November 15, 11:59 PM ET).
 
-**Our pick: LinguaBridge (AI + Languages track).** AI models charge, slow down and run out of
-memory by the *token*, and the same message costs more tokens in some languages than in
-English. LinguaBridge measures that "language tax" for Spanish, Hindi, Mandarin, Arabic and
-Kurmanji, and gets speakers a better answer by bridging through English when that helps.
+## Our project: LocaleOS (AI + Languages track)
 
-![LinguaBridge: a Kurmanji sentence cut into tokens, with the extra ones marked as the language tax](demo/linguabridge/screenshots/app_measure_kurmanji.png)
+**LocaleOS helps a small business that can't afford to have every translation checked.** It
+takes English text and gives back translations in Spanish, Hindi, Mandarin, Arabic and Kurmanji,
+with the risky ones flagged for a human, and the reason why.
 
-## What's in here
+The AI at its centre is a **review flagger**: for each machine translation it computes seven
+signals that need no human reference, and a logistic regression turns them into a review score.
 
-| Folder | What it is | Status |
-| --- | --- | --- |
-| `demo/linguabridge/` | The app (`server.py` + `web/`), the evaluation, the Colab notebook | Measure and Evidence tested in a browser; Ask and `evaluate.py` need a Colab GPU |
-| `experiments/language_tax/` | The token-tax pilot results for six languages | Run |
-| `experiments/scambreaker/` | Attacking the organisers' sample scam filter | Run; results in `results.txt` |
-| `experiments/pumpguard/` | Check of the pump-and-dump dataset | Run; results in `results.txt` |
-| `plan/` | The full plan doc (exported) and the history of every idea round | |
+### Status, honestly
 
-## The pilot finding
+| Part | State |
+| --- | --- |
+| Flagger code, dataset builder, evaluation, rating tools | Written; the whole pipeline ran end to end with **stand-in (fake) models** |
+| The app (translate, flag, explain, export; evidence page) | Written; every state tested in a browser with stand-in models |
+| Real translations, real training, real results | **Not run yet.** They need a GPU: run `LocaleOS_Colab.ipynb` |
+| Write-up, video script, judge Q&A, Sunday runbook | Drafted in `submission/`, with `[brackets]` where our real numbers go |
 
-Tokens needed for the same 12 sentences, as a multiple of English (lower is cheaper):
+The screenshots in `demo/localeos/screenshots/` are named `STANDIN_...` because they show fake
+translations and fake results. Replace them after the Colab run, and never use them in the
+write-up or video.
 
-| Tokenizer | Year | Spanish | Hindi | Mandarin | Arabic | Kurmanji |
-| --- | --- | --- | --- | --- | --- | --- |
-| Mistral 7B v1 | 2023 | 1.53x | 4.41x | 1.41x | 3.32x | 2.15x |
-| Llama 3 | 2024 | 1.33x | 2.22x | 1.02x | 1.40x | 2.01x |
-| Mistral Tekken | 2024 | 1.20x | 1.55x | 1.11x | 1.09x | 1.91x |
-| Llama 4 | 2025 | 1.12x | 1.43x | 0.88x | 1.39x | 1.87x |
+### Start here on Sunday
+1. Read `submission/RUNBOOK.md` (roles, timeline, gates, checklist).
+2. Open `demo/localeos/LocaleOS_Colab.ipynb` in Google Colab, set the runtime to T4 GPU, run the
+   cells in order.
+3. Each speaker rates their 30 translations (step 4 of the notebook).
+4. Fill the brackets in `submission/WRITEUP_draft.md` and `submission/VIDEO_script.md`.
 
-Newer models cut the tax sharply for Hindi and Arabic. Kurmanji stays the most expensive on every
-model. Dropping Kurmanji's accented letters cuts its tokens by 13 to 16%, so the tokenizer charges
-extra for the language's own alphabet.
+### Files in `demo/localeos/`
+| File | What it does |
+| --- | --- |
+| `qe.py` | The seven signals and the flagger (logistic regression, saved as readable JSON) |
+| `models.py` | The two pretrained models: NLLB-200 (translator) and LaBSE (sentence meaning) |
+| `build_dataset.py` | Translates FLORES+ and our business strings; saves as it goes |
+| `evaluate_qe.py` | Trains on `dev`, tests on `devtest`, baselines, per language, unseen-language test, failures |
+| `ratings.py` | Makes blind rating sheets for native speakers and scores the flagger against them |
+| `data/business_strings.json` | Our own 60 business texts |
+| `server.py`, `web/` | The app |
+| `standin.py` | Fake models, only for testing the code without a GPU |
 
-**Not proven yet:** the 12 sentences were translated by Claude and each of us must check our own
-language; the full study uses 1,012 FLORES+ sentences (`flores_study.py`). Whether answers get
-worse, and whether bridging fixes it, is measured by `evaluate.py`, which has not been run yet.
-
-## Run it
-
-**Colab (recommended):** open `demo/linguabridge/LinguaBridge_Colab.ipynb`, set the runtime to
-T4 GPU, and run the cells in order.
-
-**Locally (Measure and Evidence work without a GPU):**
+To try the app without a GPU (fake models, clearly labelled on screen):
 
 ```bash
-cd "Alans Claude/demo/linguabridge"
-pip install -r requirements.txt
-pip install --no-deps llama-models
-python server.py
+cd "Alans Claude/demo/localeos"
+pip install fastapi uvicorn numpy scikit-learn sacrebleu
+LOCALEOS_STANDIN=1 python build_dataset.py --n 300 && LOCALEOS_STANDIN=1 python evaluate_qe.py
+LOCALEOS_STANDIN=1 python server.py
 ```
 
-Then open http://127.0.0.1:8000. `python app.py --share` runs a simpler Gradio version that can
-give a public link.
-
-## The app
-
-Three sections, one shared language choice (Spanish, Hindi, Mandarin, Arabic, Kurmanji, plus
-English as the baseline):
-
-- **Measure the tax.** Your message is cut into the tokens a model sees. The tokens English
-  would also need stay grey; the extra ones turn red. That red part is the language tax. Below
-  it, the same message on each model generation.
-- **Ask in your language.** One question, two routes: direct, and bridged through English with a
-  translation model. Both answers appear side by side, with what the model was asked in English.
-- **The evidence.** The tax for each language across model generations, the table behind it, how
-  we measured, and what the pilot does not show yet.
-
-The design follows two public skill playbooks, impeccable and better-ui: one type family, two
-colours that each mean one thing (red for the tax, teal for the bridge), contrast checked in
-light and dark themes, keyboard support, and reduced-motion support.
-
-| | |
+## Earlier work, kept for reference
+| Folder | What it is |
 | --- | --- |
-| ![Hindi on a 2023 model: 72 tokens against 14 in English](demo/linguabridge/screenshots/app_measure_hindi_2023_model.png) | ![The evidence section](demo/linguabridge/screenshots/app_evidence.png) |
-
-## Next steps for the team
-
-1. Each speaker checks their language in `demo/linguabridge/data/pilot_sentences.json`.
-2. Run `flores_study.py` for the full tax table (needs a Hugging Face account).
-3. Run `evaluate.py --n 50` on a Colab GPU. Its results decide the route per language and give
-   the "does the bridge work?" headline.
-4. Rate 20 bridged and 20 direct answers each, in our own languages.
+| `demo/linguabridge/` | The earlier "language tax" app: what the same message costs in tokens per language. Its pilot ran on real tokenizers |
+| `experiments/` | Language-tax pilot, ScamBreaker (attacking the sample scam filter), PumpGuard data check |
+| `plan/` | The exported plan document and the history of every idea round |
 
 ## AI credits
-
-Claude (Anthropic) helped plan, rank ideas, draft translations of the pilot sentences and write
-the code in this folder during the hackathon. The team must be able to explain every line before
-submitting. Tokenizers: Meta `llama-models`, Mistral `mistral-common`, OpenAI `tiktoken`, Qwen.
-Models: NLLB-200 (Meta), Qwen 2.5 (Alibaba). Datasets: FLORES+, Belebele, SMS Spam Collection,
-La Morgia et al. pump-and-dump dataset.
+Claude (Anthropic) helped plan, rank ideas, write the code in this folder and draft the
+submission documents during the hackathon. The team runs every experiment, rates the
+translations in their own languages, and must be able to explain every line before submitting.

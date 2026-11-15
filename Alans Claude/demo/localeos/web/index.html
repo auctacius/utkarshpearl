@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LocaleOS</title>
+  <meta name="description" content="Translate your business text into five languages and know which lines a human should check.">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="wordmark" href="/" aria-label="LocaleOS home">
+      <svg viewBox="0 0 26 22" width="26" height="22" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="15" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M9.5 8.5h12a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3z" fill="var(--bg)" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M13.6 14.6l2.3 2.3 4.2-4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>LocaleOS</span>
+    </a>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="tab-review" aria-controls="view-review" aria-selected="true">Translate and review</button>
+      <button role="tab" id="tab-evidence" aria-controls="view-evidence" aria-selected="false" tabindex="-1">The evidence</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ───────────── Translate and review ───────────── -->
+    <section id="view-review" role="tabpanel" aria-labelledby="tab-review">
+      <div class="intro">
+        <h1>Know which translations to check</h1>
+        <p>Paste the English text your business is about to publish. LocaleOS translates it into five languages and marks the lines a human should look at before they go live, with the reason.</p>
+      </div>
+
+      <div class="banner" id="banner" hidden></div>
+
+      <div class="composer">
+        <label for="source">English text, one line per sentence or label</label>
+        <textarea id="source" rows="7" spellcheck="true"></textarea>
+
+        <div class="field-row">
+          <fieldset class="langs field" id="langs">
+            <legend>Translate into</legend>
+          </fieldset>
+          <div class="field">
+            <label for="glossary">Protected terms</label>
+            <input type="text" id="glossary" autocomplete="off" placeholder="Brand or product names, separated by commas">
+            <small>Names that must appear unchanged in every translation.</small>
+          </div>
+        </div>
+
+        <div class="composer-row">
+          <button type="button" class="primary" id="go">Translate and check</button>
+          <button type="button" class="quiet" id="example">Load the example</button>
+          <span class="hint" id="go-hint"></span>
+        </div>
+      </div>
+
+      <div class="notice" id="notice" hidden></div>
+      <div class="skeleton" id="loading" hidden><i></i><i></i><i></i><i></i></div>
+
+      <div class="result" id="result" hidden aria-live="polite">
+        <h2 id="headline"></h2>
+        <p class="sub" id="subline"></p>
+        <div class="toolbar">
+          <div class="seg" role="group" aria-label="Show">
+            <button type="button" id="show-all" aria-pressed="true">Everything</button>
+            <button type="button" id="show-flagged" aria-pressed="false">Needs attention</button>
+          </div>
+          <button type="button" class="quiet" id="export">Export the review list</button>
+        </div>
+        <div id="segments"></div>
+      </div>
+    </section>
+
+    <!-- ───────────── Evidence ───────────── -->
+    <section id="view-evidence" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+      <div class="intro">
+        <h1 id="ev-title">Does the flagger find the bad translations?</h1>
+        <p id="ev-lead"></p>
+      </div>
+      <div class="banner" id="ev-banner" hidden></div>
+      <div id="ev-body" hidden>
+        <figure class="chart">
+          <div id="chart" role="img"></div>
+          <figcaption id="chart-caption"></figcaption>
+        </figure>
+
+        <h2 class="section-h">By language</h2>
+        <div class="table-wrap"><table id="lang-table"></table></div>
+
+        <div id="human-block" hidden>
+          <h2 class="section-h">Checked by native speakers</h2>
+          <div class="table-wrap"><table id="human-table"></table></div>
+        </div>
+
+        <h2 class="section-h">Where it fails</h2>
+        <div class="gallery" id="gallery"></div>
+
+        <div class="prose">
+          <h2>How we tested</h2>
+          <p>We translated sentences from the FLORES+ dataset, which has a professional translation of every sentence in all five languages. A machine translation counts as bad when it is in the least accurate quarter for its language, measured against the professional version. The flagger was trained on one part of the data and tested on another part it never saw.</p>
+          <h2>What this does not show</h2>
+          <ul>
+            <li>The "bad" label is automatic. It compares wording with one professional translation, so a correct translation phrased differently can be marked bad. That is why native speakers on our team rated a sample themselves.</li>
+            <li>FLORES+ sentences read like news. Business text is shorter and full of numbers, so we also test on 60 business strings of our own.</li>
+            <li>The flagger looks for signs of trouble. It cannot prove a translation is right, and a fluent but wrong sentence can slip through.</li>
+            <li>This is a prototype. Translations of medical, legal or safety text should always be checked by a qualified person.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="notice" id="ev-empty" hidden></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A prototype for the Veritas AI Hackathon 2026, Languages track.</p>
+  </footer>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
