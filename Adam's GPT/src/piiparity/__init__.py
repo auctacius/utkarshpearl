@@ -1,2 +1,2 @@
-"""PIIParity research prototype. Regex is not an AI model."""
-__version__ = "0.1.0"
+"""PIIParity research prototype: separate regex, learned AI and hybrid detectors."""
+__version__ = "0.2.0"

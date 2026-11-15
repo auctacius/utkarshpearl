@@ -1,0 +1,40 @@
+test_bad_offsets (test_pipeline.PipelineTests.test_bad_offsets) ... ok
+test_boundaries (test_pipeline.PipelineTests.test_boundaries) ... ok
+test_dataset (test_pipeline.PipelineTests.test_dataset) ... ok
+test_devanagari_digits (test_pipeline.PipelineTests.test_devanagari_digits) ... ok
+test_email (test_pipeline.PipelineTests.test_email) ... ok
+test_empty (test_pipeline.PipelineTests.test_empty) ... ok
+test_exact_scoring (test_pipeline.PipelineTests.test_exact_scoring) ... ok
+test_local_phone_limitation (test_pipeline.PipelineTests.test_local_phone_limitation) ... ok
+test_multiple_redactions (test_pipeline.PipelineTests.test_multiple_redactions) ... ok
+test_name_limitation (test_pipeline.PipelineTests.test_name_limitation) ... ok
+test_negatives (test_pipeline.PipelineTests.test_negatives) ... ok
+test_overlap (test_pipeline.PipelineTests.test_overlap) ... ok
+test_repeat (test_pipeline.PipelineTests.test_repeat) ... ok
+test_undefined (test_pipeline.PipelineTests.test_undefined) ... ok
+test_unicode_offsets (test_pipeline.PipelineTests.test_unicode_offsets) ... ok
+test_wrong_label (test_pipeline.PipelineTests.test_wrong_label) ... ok
+test_adjacent_spans (test_system.SystemTests.test_adjacent_spans) ... ok
+test_ai_score_priority (test_system.SystemTests.test_ai_score_priority) ... ok
+test_bad_language (test_system.SystemTests.test_bad_language) ... ok
+test_bad_mode (test_system.SystemTests.test_bad_mode) ... ok
+test_bad_type (test_system.SystemTests.test_bad_type) ... ok
+test_controls (test_system.SystemTests.test_controls) ... ok
+test_empty_no_model_load (test_system.SystemTests.test_empty_no_model_load) ... ok
+test_hybrid_multiple_types (test_system.SystemTests.test_hybrid_multiple_types) ... ok
+test_invalid_unicode (test_system.SystemTests.test_invalid_unicode) ... ok
+test_long (test_system.SystemTests.test_long) ... ok
+test_no_regex_confidence (test_system.SystemTests.test_no_regex_confidence) ... ok
+test_non_sensitive (test_system.SystemTests.test_non_sensitive) ... ok
+test_non_sensitive_untouched (test_system.SystemTests.test_non_sensitive_untouched) ... ok
+test_overlap_regex_priority (test_system.SystemTests.test_overlap_regex_priority) ... ok
+test_regex_without_ai (test_system.SystemTests.test_regex_without_ai) ... ok
+test_stable_tie (test_system.SystemTests.test_stable_tie) ... ok
+test_combining_marks (test_system.TokenizationTests.test_combining_marks) ... ok
+test_han_offsets (test_system.TokenizationTests.test_han_offsets) ... ok
+test_multiscript_lossless (test_system.TokenizationTests.test_multiscript_lossless) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.004s
+
+OK

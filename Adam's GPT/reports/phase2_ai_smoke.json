@@ -1,0 +1,1260 @@
+{
+  "dataset_sha256": "335388a257d7e1a87f22e7d7ed5a71b11ce856391a3839c36043c7800dbd6de9",
+  "detector": "AI GLiNER",
+  "evaluation_kind": "development smoke fixtures, NOT held-out benchmark",
+  "documents_by_language": {
+    "en": 8,
+    "ku": 8,
+    "hi": 8,
+    "zh": 8,
+    "es": 8,
+    "tr": 8
+  },
+  "scores": {
+    "en": {
+      "all": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 3,
+        "precision": 0.5714285714285714,
+        "recall": 0.5714285714285714,
+        "f1": 0.5714285714285714
+      },
+      "PERSON": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5
+      },
+      "EMAIL": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "characters": {
+        "tp": 64,
+        "fp": 1,
+        "fn": 61,
+        "precision": 0.9846153846153847,
+        "recall": 0.512,
+        "f1": 0.6736842105263158
+      }
+    },
+    "es": {
+      "all": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.8,
+        "recall": 0.5714285714285714,
+        "f1": 0.6666666666666666
+      },
+      "PERSON": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "EMAIL": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "characters": {
+        "tp": 60,
+        "fp": 0,
+        "fn": 68,
+        "precision": 1.0,
+        "recall": 0.46875,
+        "f1": 0.6382978723404256
+      }
+    },
+    "hi": {
+      "all": {
+        "tp": 3,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.42857142857142855,
+        "recall": 0.42857142857142855,
+        "f1": 0.42857142857142855
+      },
+      "PERSON": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "EMAIL": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "characters": {
+        "tp": 46,
+        "fp": 7,
+        "fn": 75,
+        "precision": 0.8679245283018868,
+        "recall": 0.38016528925619836,
+        "f1": 0.5287356321839081
+      }
+    },
+    "ku": {
+      "all": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714,
+        "f1": 0.6153846153846154
+      },
+      "PERSON": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "EMAIL": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "characters": {
+        "tp": 65,
+        "fp": 2,
+        "fn": 58,
+        "precision": 0.9701492537313433,
+        "recall": 0.5284552845528455,
+        "f1": 0.6842105263157895
+      }
+    },
+    "tr": {
+      "all": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.6,
+        "recall": 0.42857142857142855,
+        "f1": 0.5
+      },
+      "PERSON": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "EMAIL": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "characters": {
+        "tp": 55,
+        "fp": 5,
+        "fn": 68,
+        "precision": 0.9166666666666666,
+        "recall": 0.44715447154471544,
+        "f1": 0.6010928961748634
+      }
+    },
+    "zh": {
+      "all": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.6,
+        "recall": 0.42857142857142855,
+        "f1": 0.5
+      },
+      "PERSON": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "EMAIL": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "characters": {
+        "tp": 53,
+        "fp": 1,
+        "fn": 56,
+        "precision": 0.9814814814814815,
+        "recall": 0.48623853211009177,
+        "f1": 0.6503067484662577
+      }
+    },
+    "overall": {
+      "all": {
+        "tp": 21,
+        "fp": 14,
+        "fn": 21,
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1": 0.5454545454545454
+      },
+      "PERSON": {
+        "tp": 2,
+        "fp": 12,
+        "fn": 4,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333,
+        "f1": 0.2
+      },
+      "EMAIL": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 16,
+        "precision": 0.6666666666666666,
+        "recall": 0.1111111111111111,
+        "f1": 0.19047619047619047
+      },
+      "PHONE": {
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LOCATION": {
+        "tp": 5,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      "characters": {
+        "tp": 343,
+        "fp": 16,
+        "fn": 386,
+        "precision": 0.9554317548746518,
+        "recall": 0.47050754458161864,
+        "f1": 0.6305147058823529
+      }
+    }
+  },
+  "macro_language_f1": 0.547008547008547,
+  "language_f1_gap": 0.23809523809523808,
+  "examples": [
+    {
+      "id": "en-00",
+      "language": "en",
+      "input": "My name is Mira Example.",
+      "gold": [
+        {
+          "start": 11,
+          "end": 23,
+          "label": "PERSON"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 11,
+          "end": 23,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "My name is [PERSON].",
+      "actual_redaction": "My name is [PERSON]."
+    },
+    {
+      "id": "en-01",
+      "language": "en",
+      "input": "Contact: student@example.com.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 28,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "Contact: [EMAIL].",
+      "actual_redaction": "Contact: student@example.com."
+    },
+    {
+      "id": "en-02",
+      "language": "en",
+      "input": "Phone: +1-202-555-0100.",
+      "gold": [
+        {
+          "start": 7,
+          "end": 22,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 7,
+          "end": 22,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Phone: [PHONE].",
+      "actual_redaction": "Phone: [PHONE]."
+    },
+    {
+      "id": "en-03",
+      "language": "en",
+      "input": "I live in Exampletown.",
+      "gold": [
+        {
+          "start": 10,
+          "end": 21,
+          "label": "LOCATION"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 1,
+          "label": "PERSON"
+        },
+        {
+          "start": 10,
+          "end": 21,
+          "label": "LOCATION"
+        }
+      ],
+      "expected_redaction": "I live in [LOCATION].",
+      "actual_redaction": "[PERSON] live in [LOCATION]."
+    },
+    {
+      "id": "en-04",
+      "language": "en",
+      "input": "There are 42 books.",
+      "gold": [],
+      "prediction": [],
+      "expected_redaction": "There are 42 books.",
+      "actual_redaction": "There are 42 books."
+    },
+    {
+      "id": "en-05",
+      "language": "en",
+      "input": "Contact: first.last+tag@example.org.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 35,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "Contact: [EMAIL].",
+      "actual_redaction": "Contact: first.last+tag@example.org."
+    },
+    {
+      "id": "en-06",
+      "language": "en",
+      "input": "Phone: 202-555-0101.",
+      "gold": [
+        {
+          "start": 7,
+          "end": 19,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 7,
+          "end": 19,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Phone: [PHONE].",
+      "actual_redaction": "Phone: [PHONE]."
+    },
+    {
+      "id": "en-07",
+      "language": "en",
+      "input": "Contact: student [at] example [dot] com.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 39,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 9,
+          "end": 16,
+          "label": "PERSON"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "label": "EMAIL"
+        }
+      ],
+      "expected_redaction": "Contact: [EMAIL].",
+      "actual_redaction": "Contact: [PERSON] [at] [EMAIL] [dot] com."
+    },
+    {
+      "id": "ku-00",
+      "language": "ku",
+      "input": "Navê min Roj Mînak e.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 18,
+          "label": "PERSON"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "Navê min [PERSON] e.",
+      "actual_redaction": "Navê min Roj Mînak e."
+    },
+    {
+      "id": "ku-01",
+      "language": "ku",
+      "input": "E-name: student@example.com.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 27,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 8,
+          "end": 27,
+          "label": "EMAIL"
+        }
+      ],
+      "expected_redaction": "E-name: [EMAIL].",
+      "actual_redaction": "E-name: [EMAIL]."
+    },
+    {
+      "id": "ku-02",
+      "language": "ku",
+      "input": "Hejmara telefonê: +1-202-555-0100.",
+      "gold": [
+        {
+          "start": 18,
+          "end": 33,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 18,
+          "end": 33,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Hejmara telefonê: [PHONE].",
+      "actual_redaction": "Hejmara telefonê: [PHONE]."
+    },
+    {
+      "id": "ku-03",
+      "language": "ku",
+      "input": "Ez li Bajarê Mînak dijîm.",
+      "gold": [
+        {
+          "start": 6,
+          "end": 18,
+          "label": "LOCATION"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 6,
+          "end": 18,
+          "label": "LOCATION"
+        }
+      ],
+      "expected_redaction": "Ez li [LOCATION] dijîm.",
+      "actual_redaction": "Ez li [LOCATION] dijîm."
+    },
+    {
+      "id": "ku-04",
+      "language": "ku",
+      "input": "Li vir 42 pirtûk hene.",
+      "gold": [],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 2,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "Li vir 42 pirtûk hene.",
+      "actual_redaction": "[PERSON] vir 42 pirtûk hene."
+    },
+    {
+      "id": "ku-05",
+      "language": "ku",
+      "input": "E-name: first.last+tag@example.org.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 34,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "E-name: [EMAIL].",
+      "actual_redaction": "E-name: first.last+tag@example.org."
+    },
+    {
+      "id": "ku-06",
+      "language": "ku",
+      "input": "Hejmara telefonê: 202-555-0101.",
+      "gold": [
+        {
+          "start": 18,
+          "end": 30,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 18,
+          "end": 30,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Hejmara telefonê: [PHONE].",
+      "actual_redaction": "Hejmara telefonê: [PHONE]."
+    },
+    {
+      "id": "ku-07",
+      "language": "ku",
+      "input": "E-name: student [at] example [dot] com.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 38,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 8,
+          "end": 15,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "E-name: [EMAIL].",
+      "actual_redaction": "E-name: [PERSON] [at] example [dot] com."
+    },
+    {
+      "id": "hi-00",
+      "language": "hi",
+      "input": "मेरा नाम आशा उदाहरण है।",
+      "gold": [
+        {
+          "start": 9,
+          "end": 19,
+          "label": "PERSON"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 9,
+          "end": 12,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "मेरा नाम [PERSON] है।",
+      "actual_redaction": "मेरा नाम [PERSON] उदाहरण है।"
+    },
+    {
+      "id": "hi-01",
+      "language": "hi",
+      "input": "ईमेल: student@example.com।",
+      "gold": [
+        {
+          "start": 6,
+          "end": 25,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "ईमेल: [EMAIL]।",
+      "actual_redaction": "ईमेल: student@example.com।"
+    },
+    {
+      "id": "hi-02",
+      "language": "hi",
+      "input": "फ़ोन: +1-202-555-0100।",
+      "gold": [
+        {
+          "start": 6,
+          "end": 21,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 6,
+          "end": 21,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "फ़ोन: [PHONE]।",
+      "actual_redaction": "फ़ोन: [PHONE]।"
+    },
+    {
+      "id": "hi-03",
+      "language": "hi",
+      "input": "मैं उदाहरणनगर में रहता हूँ।",
+      "gold": [
+        {
+          "start": 4,
+          "end": 13,
+          "label": "LOCATION"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 3,
+          "label": "PERSON"
+        },
+        {
+          "start": 4,
+          "end": 13,
+          "label": "LOCATION"
+        }
+      ],
+      "expected_redaction": "मैं [LOCATION] में रहता हूँ।",
+      "actual_redaction": "[PERSON] [LOCATION] में रहता हूँ।"
+    },
+    {
+      "id": "hi-04",
+      "language": "hi",
+      "input": "यहाँ 42 किताबें हैं।",
+      "gold": [],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "LOCATION"
+        }
+      ],
+      "expected_redaction": "यहाँ 42 किताबें हैं।",
+      "actual_redaction": "[LOCATION] 42 किताबें हैं।"
+    },
+    {
+      "id": "hi-05",
+      "language": "hi",
+      "input": "ईमेल: first.last+tag@example.org।",
+      "gold": [
+        {
+          "start": 6,
+          "end": 32,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "ईमेल: [EMAIL]।",
+      "actual_redaction": "ईमेल: first.last+tag@example.org।"
+    },
+    {
+      "id": "hi-06",
+      "language": "hi",
+      "input": "फ़ोन: 202-555-0101।",
+      "gold": [
+        {
+          "start": 6,
+          "end": 18,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 6,
+          "end": 18,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "फ़ोन: [PHONE]।",
+      "actual_redaction": "फ़ोन: [PHONE]।"
+    },
+    {
+      "id": "hi-07",
+      "language": "hi",
+      "input": "ईमेल: student [at] example [dot] com।",
+      "gold": [
+        {
+          "start": 6,
+          "end": 36,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 6,
+          "end": 13,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "ईमेल: [EMAIL]।",
+      "actual_redaction": "ईमेल: [PERSON] [at] example [dot] com।"
+    },
+    {
+      "id": "zh-00",
+      "language": "zh",
+      "input": "我的名字是示例小明。",
+      "gold": [
+        {
+          "start": 5,
+          "end": 9,
+          "label": "PERSON"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "我的名字是[PERSON]。",
+      "actual_redaction": "我的名字是示例小明。"
+    },
+    {
+      "id": "zh-01",
+      "language": "zh",
+      "input": "电子邮箱：student@example.com。",
+      "gold": [
+        {
+          "start": 5,
+          "end": 24,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 5,
+          "end": 24,
+          "label": "EMAIL"
+        }
+      ],
+      "expected_redaction": "电子邮箱：[EMAIL]。",
+      "actual_redaction": "电子邮箱：[EMAIL]。"
+    },
+    {
+      "id": "zh-02",
+      "language": "zh",
+      "input": "电话：+1-202-555-0100。",
+      "gold": [
+        {
+          "start": 3,
+          "end": 18,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 3,
+          "end": 18,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "电话：[PHONE]。",
+      "actual_redaction": "电话：[PHONE]。"
+    },
+    {
+      "id": "zh-03",
+      "language": "zh",
+      "input": "我住在示例城。",
+      "gold": [
+        {
+          "start": 3,
+          "end": 6,
+          "label": "LOCATION"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 1,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "我住在[LOCATION]。",
+      "actual_redaction": "[PERSON]住在示例城。"
+    },
+    {
+      "id": "zh-04",
+      "language": "zh",
+      "input": "这里有42本书。",
+      "gold": [],
+      "prediction": [],
+      "expected_redaction": "这里有42本书。",
+      "actual_redaction": "这里有42本书。"
+    },
+    {
+      "id": "zh-05",
+      "language": "zh",
+      "input": "电子邮箱：first.last+tag@example.org。",
+      "gold": [
+        {
+          "start": 5,
+          "end": 31,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "电子邮箱：[EMAIL]。",
+      "actual_redaction": "电子邮箱：first.last+tag@example.org。"
+    },
+    {
+      "id": "zh-06",
+      "language": "zh",
+      "input": "电话：202-555-0101。",
+      "gold": [
+        {
+          "start": 3,
+          "end": 15,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 3,
+          "end": 15,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "电话：[PHONE]。",
+      "actual_redaction": "电话：[PHONE]。"
+    },
+    {
+      "id": "zh-07",
+      "language": "zh",
+      "input": "电子邮箱：student [at] example [dot] com。",
+      "gold": [
+        {
+          "start": 5,
+          "end": 35,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 5,
+          "end": 12,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "电子邮箱：[EMAIL]。",
+      "actual_redaction": "电子邮箱：[PERSON] [at] example [dot] com。"
+    },
+    {
+      "id": "es-00",
+      "language": "es",
+      "input": "Me llamo Mira Ejemplo.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 21,
+          "label": "PERSON"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 9,
+          "end": 21,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "Me llamo [PERSON].",
+      "actual_redaction": "Me llamo [PERSON]."
+    },
+    {
+      "id": "es-01",
+      "language": "es",
+      "input": "Correo: student@example.com.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 27,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "Correo: [EMAIL].",
+      "actual_redaction": "Correo: student@example.com."
+    },
+    {
+      "id": "es-02",
+      "language": "es",
+      "input": "Teléfono: +1-202-555-0100.",
+      "gold": [
+        {
+          "start": 10,
+          "end": 25,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 10,
+          "end": 25,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Teléfono: [PHONE].",
+      "actual_redaction": "Teléfono: [PHONE]."
+    },
+    {
+      "id": "es-03",
+      "language": "es",
+      "input": "Vivo en Ciudad Ejemplo.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 22,
+          "label": "LOCATION"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 8,
+          "end": 22,
+          "label": "LOCATION"
+        }
+      ],
+      "expected_redaction": "Vivo en [LOCATION].",
+      "actual_redaction": "Vivo en [LOCATION]."
+    },
+    {
+      "id": "es-04",
+      "language": "es",
+      "input": "Hay 42 libros.",
+      "gold": [],
+      "prediction": [],
+      "expected_redaction": "Hay 42 libros.",
+      "actual_redaction": "Hay 42 libros."
+    },
+    {
+      "id": "es-05",
+      "language": "es",
+      "input": "Correo: first.last+tag@example.org.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 34,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "Correo: [EMAIL].",
+      "actual_redaction": "Correo: first.last+tag@example.org."
+    },
+    {
+      "id": "es-06",
+      "language": "es",
+      "input": "Teléfono: 202-555-0101.",
+      "gold": [
+        {
+          "start": 10,
+          "end": 22,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 10,
+          "end": 22,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Teléfono: [PHONE].",
+      "actual_redaction": "Teléfono: [PHONE]."
+    },
+    {
+      "id": "es-07",
+      "language": "es",
+      "input": "Correo: student [at] example [dot] com.",
+      "gold": [
+        {
+          "start": 8,
+          "end": 38,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 8,
+          "end": 15,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "Correo: [EMAIL].",
+      "actual_redaction": "Correo: [PERSON] [at] example [dot] com."
+    },
+    {
+      "id": "tr-00",
+      "language": "tr",
+      "input": "Adım Deniz Örnek.",
+      "gold": [
+        {
+          "start": 5,
+          "end": 16,
+          "label": "PERSON"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 16,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "Adım [PERSON].",
+      "actual_redaction": "[PERSON]."
+    },
+    {
+      "id": "tr-01",
+      "language": "tr",
+      "input": "E-posta: student@example.com.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 28,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "E-posta: [EMAIL].",
+      "actual_redaction": "E-posta: student@example.com."
+    },
+    {
+      "id": "tr-02",
+      "language": "tr",
+      "input": "Telefon: +1-202-555-0100.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 24,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 9,
+          "end": 24,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Telefon: [PHONE].",
+      "actual_redaction": "Telefon: [PHONE]."
+    },
+    {
+      "id": "tr-03",
+      "language": "tr",
+      "input": "Örnekşehir içinde yaşıyorum.",
+      "gold": [
+        {
+          "start": 0,
+          "end": 10,
+          "label": "LOCATION"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 0,
+          "end": 10,
+          "label": "LOCATION"
+        }
+      ],
+      "expected_redaction": "[LOCATION] içinde yaşıyorum.",
+      "actual_redaction": "[LOCATION] içinde yaşıyorum."
+    },
+    {
+      "id": "tr-04",
+      "language": "tr",
+      "input": "Burada 42 kitap var.",
+      "gold": [],
+      "prediction": [],
+      "expected_redaction": "Burada 42 kitap var.",
+      "actual_redaction": "Burada 42 kitap var."
+    },
+    {
+      "id": "tr-05",
+      "language": "tr",
+      "input": "E-posta: first.last+tag@example.org.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 35,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [],
+      "expected_redaction": "E-posta: [EMAIL].",
+      "actual_redaction": "E-posta: first.last+tag@example.org."
+    },
+    {
+      "id": "tr-06",
+      "language": "tr",
+      "input": "Telefon: 202-555-0101.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 21,
+          "label": "PHONE"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 9,
+          "end": 21,
+          "label": "PHONE"
+        }
+      ],
+      "expected_redaction": "Telefon: [PHONE].",
+      "actual_redaction": "Telefon: [PHONE]."
+    },
+    {
+      "id": "tr-07",
+      "language": "tr",
+      "input": "E-posta: student [at] example [dot] com.",
+      "gold": [
+        {
+          "start": 9,
+          "end": 39,
+          "label": "EMAIL"
+        }
+      ],
+      "prediction": [
+        {
+          "start": 9,
+          "end": 16,
+          "label": "PERSON"
+        }
+      ],
+      "expected_redaction": "E-posta: [EMAIL].",
+      "actual_redaction": "E-posta: [PERSON] [at] example [dot] com."
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+{
+  "timestamp": "2026-11-14T19:58:05.764686+00:00",
+  "model": "urchade/gliner_multi-v2.1",
+  "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "load_seconds": 7.626801166916266,
+  "examples": [
+    {
+      "language": "English",
+      "text": "Mira Patel lives in London. Email mira@example.com or call +1-202-555-0100.",
+      "seconds": 0.2693509589880705,
+      "results": {
+        "Regex": {
+          "mode": "Regex",
+          "language": "en",
+          "model": null,
+          "revision": null,
+          "entities": [
+            {
+              "start": 34,
+              "end": 50,
+              "label": "EMAIL",
+              "text": "mira@example.com",
+              "score": null,
+              "source": "regex"
+            },
+            {
+              "start": 59,
+              "end": 74,
+              "label": "PHONE",
+              "text": "+1-202-555-0100",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Mira Patel lives in London. Email [EMAIL] or call [PHONE].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "AI": {
+          "mode": "AI",
+          "language": "en",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 0,
+              "end": 10,
+              "label": "PERSON",
+              "text": "Mira Patel",
+              "score": 0.9929403066635132,
+              "source": "ai"
+            },
+            {
+              "start": 20,
+              "end": 26,
+              "label": "LOCATION",
+              "text": "London",
+              "score": 0.9704006314277649,
+              "source": "ai"
+            },
+            {
+              "start": 59,
+              "end": 74,
+              "label": "PHONE",
+              "text": "+1-202-555-0100",
+              "score": 0.6370872259140015,
+              "source": "ai"
+            }
+          ],
+          "redacted_text": "[PERSON] lives in [LOCATION]. Email mira@example.com or call [PHONE].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "Hybrid": {
+          "mode": "Hybrid",
+          "language": "en",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 0,
+              "end": 10,
+              "label": "PERSON",
+              "text": "Mira Patel",
+              "score": 0.9929403066635132,
+              "source": "ai"
+            },
+            {
+              "start": 20,
+              "end": 26,
+              "label": "LOCATION",
+              "text": "London",
+              "score": 0.9704006314277649,
+              "source": "ai"
+            },
+            {
+              "start": 34,
+              "end": 50,
+              "label": "EMAIL",
+              "text": "mira@example.com",
+              "score": null,
+              "source": "regex"
+            },
+            {
+              "start": 59,
+              "end": 74,
+              "label": "PHONE",
+              "text": "+1-202-555-0100",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "[PERSON] lives in [LOCATION]. Email [EMAIL] or call [PHONE].",
+          "dropped_overlaps": 1,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        }
+      }
+    },
+    {
+      "language": "Kurmanji (experimental)",
+      "text": "Navê min Roj Azad e. Ez li Amedê dijîm. E-name: roj@example.com.",
+      "seconds": 0.04058508307207376,
+      "results": {
+        "Regex": {
+          "mode": "Regex",
+          "language": "ku",
+          "model": null,
+          "revision": null,
+          "entities": [
+            {
+              "start": 48,
+              "end": 63,
+              "label": "EMAIL",
+              "text": "roj@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Navê min Roj Azad e. Ez li Amedê dijîm. E-name: [EMAIL].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "AI": {
+          "mode": "AI",
+          "language": "ku",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 9,
+              "end": 12,
+              "label": "PERSON",
+              "text": "Roj",
+              "score": 0.9758301973342896,
+              "source": "ai"
+            },
+            {
+              "start": 27,
+              "end": 32,
+              "label": "LOCATION",
+              "text": "Amedê",
+              "score": 0.9765905141830444,
+              "source": "ai"
+            },
+            {
+              "start": 48,
+              "end": 51,
+              "label": "PERSON",
+              "text": "roj",
+              "score": 0.8871362805366516,
+              "source": "ai"
+            }
+          ],
+          "redacted_text": "Navê min [PERSON] Azad e. Ez li [LOCATION] dijîm. E-name: [PERSON]@example.com.",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "Hybrid": {
+          "mode": "Hybrid",
+          "language": "ku",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 9,
+              "end": 12,
+              "label": "PERSON",
+              "text": "Roj",
+              "score": 0.9758301973342896,
+              "source": "ai"
+            },
+            {
+              "start": 27,
+              "end": 32,
+              "label": "LOCATION",
+              "text": "Amedê",
+              "score": 0.9765905141830444,
+              "source": "ai"
+            },
+            {
+              "start": 48,
+              "end": 63,
+              "label": "EMAIL",
+              "text": "roj@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Navê min [PERSON] Azad e. Ez li [LOCATION] dijîm. E-name: [EMAIL].",
+          "dropped_overlaps": 1,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        }
+      }
+    },
+    {
+      "language": "Hindi",
+      "text": "मेरा नाम आशा शर्मा है। मैं दिल्ली में रहती हूँ। ईमेल: asha@example.com।",
+      "seconds": 0.03959979105275124,
+      "results": {
+        "Regex": {
+          "mode": "Regex",
+          "language": "hi",
+          "model": null,
+          "revision": null,
+          "entities": [
+            {
+              "start": 54,
+              "end": 70,
+              "label": "EMAIL",
+              "text": "asha@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "मेरा नाम आशा शर्मा है। मैं दिल्ली में रहती हूँ। ईमेल: [EMAIL]।",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "AI": {
+          "mode": "AI",
+          "language": "hi",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 9,
+              "end": 18,
+              "label": "PERSON",
+              "text": "आशा शर्मा",
+              "score": 0.987280011177063,
+              "source": "ai"
+            },
+            {
+              "start": 27,
+              "end": 33,
+              "label": "LOCATION",
+              "text": "दिल्ली",
+              "score": 0.9315619468688965,
+              "source": "ai"
+            },
+            {
+              "start": 54,
+              "end": 70,
+              "label": "EMAIL",
+              "text": "asha@example.com",
+              "score": 0.5226457118988037,
+              "source": "ai"
+            }
+          ],
+          "redacted_text": "मेरा नाम [PERSON] है। मैं [LOCATION] में रहती हूँ। ईमेल: [EMAIL]।",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "Hybrid": {
+          "mode": "Hybrid",
+          "language": "hi",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 9,
+              "end": 18,
+              "label": "PERSON",
+              "text": "आशा शर्मा",
+              "score": 0.987280011177063,
+              "source": "ai"
+            },
+            {
+              "start": 27,
+              "end": 33,
+              "label": "LOCATION",
+              "text": "दिल्ली",
+              "score": 0.9315619468688965,
+              "source": "ai"
+            },
+            {
+              "start": 54,
+              "end": 70,
+              "label": "EMAIL",
+              "text": "asha@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "मेरा नाम [PERSON] है। मैं [LOCATION] में रहती हूँ। ईमेल: [EMAIL]।",
+          "dropped_overlaps": 1,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        }
+      }
+    },
+    {
+      "language": "Simplified Chinese",
+      "text": "我叫李明，住在北京。我的邮箱是 liming@example.com。",
+      "seconds": 0.03812391706742346,
+      "results": {
+        "Regex": {
+          "mode": "Regex",
+          "language": "zh",
+          "model": null,
+          "revision": null,
+          "entities": [
+            {
+              "start": 16,
+              "end": 34,
+              "label": "EMAIL",
+              "text": "liming@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "我叫李明，住在北京。我的邮箱是 [EMAIL]。",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "AI": {
+          "mode": "AI",
+          "language": "zh",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 2,
+              "end": 4,
+              "label": "PERSON",
+              "text": "李明",
+              "score": 0.9793581366539001,
+              "source": "ai"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "label": "LOCATION",
+              "text": "北京",
+              "score": 0.9406246542930603,
+              "source": "ai"
+            }
+          ],
+          "redacted_text": "我叫[PERSON]，住在[LOCATION]。我的邮箱是 liming@example.com。",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "Hybrid": {
+          "mode": "Hybrid",
+          "language": "zh",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 2,
+              "end": 4,
+              "label": "PERSON",
+              "text": "李明",
+              "score": 0.9793581366539001,
+              "source": "ai"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "label": "LOCATION",
+              "text": "北京",
+              "score": 0.9406246542930603,
+              "source": "ai"
+            },
+            {
+              "start": 16,
+              "end": 34,
+              "label": "EMAIL",
+              "text": "liming@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "我叫[PERSON]，住在[LOCATION]。我的邮箱是 [EMAIL]。",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        }
+      }
+    },
+    {
+      "language": "Spanish",
+      "text": "Me llamo Lucía Torres y vivo en Madrid. Correo: lucia@example.com.",
+      "seconds": 0.03466583299450576,
+      "results": {
+        "Regex": {
+          "mode": "Regex",
+          "language": "es",
+          "model": null,
+          "revision": null,
+          "entities": [
+            {
+              "start": 48,
+              "end": 65,
+              "label": "EMAIL",
+              "text": "lucia@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Me llamo Lucía Torres y vivo en Madrid. Correo: [EMAIL].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "AI": {
+          "mode": "AI",
+          "language": "es",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 9,
+              "end": 21,
+              "label": "PERSON",
+              "text": "Lucía Torres",
+              "score": 0.9917790293693542,
+              "source": "ai"
+            },
+            {
+              "start": 32,
+              "end": 38,
+              "label": "LOCATION",
+              "text": "Madrid",
+              "score": 0.9701456427574158,
+              "source": "ai"
+            },
+            {
+              "start": 48,
+              "end": 65,
+              "label": "EMAIL",
+              "text": "lucia@example.com",
+              "score": 0.5579798221588135,
+              "source": "ai"
+            }
+          ],
+          "redacted_text": "Me llamo [PERSON] y vivo en [LOCATION]. Correo: [EMAIL].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "Hybrid": {
+          "mode": "Hybrid",
+          "language": "es",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 9,
+              "end": 21,
+              "label": "PERSON",
+              "text": "Lucía Torres",
+              "score": 0.9917790293693542,
+              "source": "ai"
+            },
+            {
+              "start": 32,
+              "end": 38,
+              "label": "LOCATION",
+              "text": "Madrid",
+              "score": 0.9701456427574158,
+              "source": "ai"
+            },
+            {
+              "start": 48,
+              "end": 65,
+              "label": "EMAIL",
+              "text": "lucia@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Me llamo [PERSON] y vivo en [LOCATION]. Correo: [EMAIL].",
+          "dropped_overlaps": 1,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        }
+      }
+    },
+    {
+      "language": "Turkish",
+      "text": "Benim adım Deniz Yılmaz. Ankara şehrinde yaşıyorum. E-posta: deniz@example.com.",
+      "seconds": 0.03733529103919864,
+      "results": {
+        "Regex": {
+          "mode": "Regex",
+          "language": "tr",
+          "model": null,
+          "revision": null,
+          "entities": [
+            {
+              "start": 61,
+              "end": 78,
+              "label": "EMAIL",
+              "text": "deniz@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Benim adım Deniz Yılmaz. Ankara şehrinde yaşıyorum. E-posta: [EMAIL].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "AI": {
+          "mode": "AI",
+          "language": "tr",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 11,
+              "end": 23,
+              "label": "PERSON",
+              "text": "Deniz Yılmaz",
+              "score": 0.9931746125221252,
+              "source": "ai"
+            },
+            {
+              "start": 25,
+              "end": 40,
+              "label": "LOCATION",
+              "text": "Ankara şehrinde",
+              "score": 0.8841020464897156,
+              "source": "ai"
+            },
+            {
+              "start": 61,
+              "end": 78,
+              "label": "EMAIL",
+              "text": "deniz@example.com",
+              "score": 0.5228986740112305,
+              "source": "ai"
+            }
+          ],
+          "redacted_text": "Benim adım [PERSON]. [LOCATION] yaşıyorum. E-posta: [EMAIL].",
+          "dropped_overlaps": 0,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        },
+        "Hybrid": {
+          "mode": "Hybrid",
+          "language": "tr",
+          "model": "urchade/gliner_multi-v2.1",
+          "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+          "entities": [
+            {
+              "start": 11,
+              "end": 23,
+              "label": "PERSON",
+              "text": "Deniz Yılmaz",
+              "score": 0.9931746125221252,
+              "source": "ai"
+            },
+            {
+              "start": 25,
+              "end": 40,
+              "label": "LOCATION",
+              "text": "Ankara şehrinde",
+              "score": 0.8841020464897156,
+              "source": "ai"
+            },
+            {
+              "start": 61,
+              "end": 78,
+              "label": "EMAIL",
+              "text": "deniz@example.com",
+              "score": null,
+              "source": "regex"
+            }
+          ],
+          "redacted_text": "Benim adım [PERSON]. [LOCATION] yaşıyorum. E-posta: [EMAIL].",
+          "dropped_overlaps": 1,
+          "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+        }
+      }
+    }
+  ],
+  "edge_cases": {
+    "": {
+      "Regex": {
+        "mode": "Regex",
+        "language": "en",
+        "model": null,
+        "revision": null,
+        "entities": [],
+        "redacted_text": "",
+        "dropped_overlaps": 0,
+        "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+      },
+      "AI": {
+        "mode": "AI",
+        "language": "en",
+        "model": "urchade/gliner_multi-v2.1",
+        "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+        "entities": [],
+        "redacted_text": "",
+        "dropped_overlaps": 0,
+        "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+      },
+      "Hybrid": {
+        "mode": "Hybrid",
+        "language": "en",
+        "model": "urchade/gliner_multi-v2.1",
+        "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+        "entities": [],
+        "redacted_text": "",
+        "dropped_overlaps": 0,
+        "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+      }
+    },
+    "There are 42 books on the shelf.": {
+      "Regex": {
+        "mode": "Regex",
+        "language": "en",
+        "model": null,
+        "revision": null,
+        "entities": [],
+        "redacted_text": "There are 42 books on the shelf.",
+        "dropped_overlaps": 0,
+        "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+      },
+      "AI": {
+        "mode": "AI",
+        "language": "en",
+        "model": "urchade/gliner_multi-v2.1",
+        "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+        "entities": [],
+        "redacted_text": "There are 42 books on the shelf.",
+        "dropped_overlaps": 0,
+        "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+      },
+      "Hybrid": {
+        "mode": "Hybrid",
+        "language": "en",
+        "model": "urchade/gliner_multi-v2.1",
+        "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+        "entities": [],
+        "redacted_text": "There are 42 books on the shelf.",
+        "dropped_overlaps": 0,
+        "warning": "May miss identifying information. Scores are uncalibrated model outputs, not probabilities of safety."
+      }
+    }
+  },
+  "dependencies": {
+    "torch": "2.7.1",
+    "transformers": "4.51.0",
+    "gliner": "0.2.22",
+    "gradio": "5.49.1",
+    "sentencepiece": "0.2.1"
+  },
+  "evaluation_kind": "development diagnostics; not independent benchmark"
+}
