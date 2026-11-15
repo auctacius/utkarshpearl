@@ -1,0 +1,7 @@
+{
+  "language": "hi",
+  "mode": "token",
+  "status": "STARTER - the Hindi-speaking teammate must review, remove cues that cause false alarms, and add missing ones",
+  "note": "Token mode: a cue counts only as a whole word (or whole phrase). Punctuation such as the danda is treated as a space.",
+  "cues": ["नहीं", "नही", "न", "मत", "बिना", "ना", "बचें", "बचिए", "बचना", "निषेध", "वर्जित"]
+}

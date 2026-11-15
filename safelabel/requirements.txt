@@ -1,0 +1,12 @@
+# Colab already has torch, pandas, numpy, matplotlib, scipy. Install the rest with:
+#   !pip -q install -r requirements.txt
+transformers>=4.40
+sentencepiece
+sacrebleu
+gradio
+pandas
+scipy
+matplotlib
+# Optional / stretch goals only:
+# sentence-transformers      # LaBSE similarity baseline (stretch S1)
+# (Gemini SDK: install whichever package the current Google AI Studio docs name)

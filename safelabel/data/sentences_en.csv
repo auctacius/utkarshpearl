@@ -1,0 +1,61 @@
+sentence_id,category,split,src_en,expected_numbers_en,has_negation_en
+S001,dose,dev,"Take 2 tablets with a full glass of water.",2,0
+S002,frequency,test,"Take one tablet every 8 hours.",1|8,0
+S003,limit,dev,"Do not take more than 6 tablets in 24 hours.",6|24,1
+S004,warning,test,"Do not crush or chew the tablets.",,1
+S005,food_alcohol,dev,"Take this medicine with food.",,0
+S006,duration,test,"Use for 7 days, even if you feel better.",7,0
+S007,units,dev,"Measure 5 mL with the dosing cup provided.",5,0
+S008,age_weight,test,"Children under 12 years should not take this medicine without asking a doctor.",12,1
+S009,call_doctor,dev,"Call your doctor if your fever lasts more than 3 days.",3,0
+S010,storage,test,"Store below 25 °C and keep out of the reach of children.",25,0
+S011,missed_dose,dev,"If you miss a dose, take it as soon as you remember.",,0
+S012,missed_dose,test,"Do not take two doses at the same time.",2,1
+S013,frequency,dev,"Apply a thin layer to the affected skin twice a day.",2,0
+S014,route,test,"For use in the ear only.",,0
+S015,dose,dev,"Take half a tablet in the morning.",0.5,0
+S016,frequency,test,"Take 1 tablet at 8 a.m. and 1 tablet at 8 p.m.",1|8,0
+S017,dose,dev,"Take 1 to 2 tablets every 4 to 6 hours as needed.",1|2|4|6,0
+S018,limit,test,"Do not exceed 4 doses in a 24-hour period.",4|24,1
+S019,food_alcohol,dev,"Avoid alcohol while taking this medicine.",,1
+S020,warning,test,"Do not use if you are pregnant or breastfeeding.",,1
+S021,interaction,dev,"Do not take with other medicines that contain the same active ingredient.",,1
+S022,duration,test,"Do not use for more than 3 days without medical advice.",3,1
+S023,units,dev,"Take 1/2 teaspoon (2.5 mL) twice daily.",0.5|2|2.5,0
+S024,dose,test,"Apply the 0.5% cream to clean, dry skin.",0.5,0
+S025,route,dev,"Dissolve 1 packet in a glass of water and drink right away.",1,0
+S026,age_weight,test,"The dose is 10 mL for children weighing 20 to 30 kg.",10|20|30,0
+S027,units,dev,"Each tablet contains 20 mg of Zolvera.",20,0
+S028,frequency,test,"Take once daily at bedtime.",1,0
+S029,route,dev,"Shake the bottle well before each use.",,0
+S030,dose,test,"Put 2 drops in each eye 3 times a day.",2|3,0
+S031,frequency,dev,"Wait at least 4 hours between doses.",4,0
+S032,route,test,"Swallow the capsule whole with water.",,0
+S033,warning,dev,"Avoid direct sunlight while using this cream.",,1
+S034,warning,test,"This medicine may cause drowsiness. Do not drive or use machines.",,1
+S035,storage,dev,"Keep in the refrigerator between 2 °C and 8 °C.",2|8,0
+S036,storage,test,"Do not use after the expiry date printed on the box.",,1
+S037,call_doctor,dev,"Stop taking this medicine and call your doctor if you develop a rash.",,0
+S038,duration,test,"Take for 10 days. Finish all the tablets.",10,0
+S039,age_weight,dev,"Not recommended for babies under 6 months.",6,1
+S040,frequency,test,"Take 1 tablet every 12 hours for 5 days.",1|5|12,0
+S041,dose,dev,"Take 3 tablets on the first day, then 1 tablet a day for 4 days.",1|3|4,0
+S042,route,test,"Rinse your mouth with water after using the inhaler.",,0
+S043,limit,dev,"Use 2 puffs when needed. Do not use more than 8 puffs in 24 hours.",2|8|24,1
+S044,food_alcohol,test,"Take 1 capsule 30 minutes before breakfast.",1|30,0
+S045,food_alcohol,dev,"Take this medicine on an empty stomach, at least 1 hour before meals.",1,0
+S046,route,test,"Place the tablet under your tongue and let it dissolve.",,0
+S047,warning,dev,"Do not stop taking this medicine suddenly.",,1
+S048,other,test,"Your urine may look orange. This is harmless.",,0
+S049,units,dev,"Use only the dosing cup, not a kitchen spoon.",,1
+S050,dose,test,"Take 2 tablets now, then 1 tablet after 12 hours.",1|2|12,0
+S051,call_doctor,dev,"If your symptoms get worse or do not improve in 5 days, see a doctor.",5,1
+S052,age_weight,test,"Give 7.5 mL to a child aged 6 to 11 years.",6|7.5|11,0
+S053,route,dev,"Wash your hands before and after applying the ointment.",,0
+S054,warning,test,"Do not apply to broken skin or near the eyes.",,1
+S055,dose,dev,"Take 1 tablet every morning. The tablet strength is 40 mg.",1|40,0
+S056,interaction,test,"Allow 2 hours between this medicine and antacids.",2,0
+S057,interaction,dev,"Tell your doctor about all other medicines you take.",,0
+S058,age_weight,test,"This medicine is for adults over 18 years only.",18,0
+S059,dose,dev,"Take 2 sachets daily, mixed with 200 mL of water.",2|200,0
+S060,call_doctor,test,"Seek emergency help right away if you have trouble breathing or swelling of the face.",,0

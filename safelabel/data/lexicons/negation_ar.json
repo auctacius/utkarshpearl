@@ -1,0 +1,7 @@
+{
+  "language": "ar",
+  "mode": "token",
+  "status": "STARTER - the Arabic-speaking teammate must review, remove cues that cause false alarms, and add missing ones",
+  "note": "Token mode: a cue counts only as a whole word (or whole phrase). Vowel marks and the stretching character are ignored before matching. The word for 'below/under' (as in children under 12) is left out on purpose because it is not a negation there.",
+  "cues": ["لا", "ولا", "فلا", "بلا", "ليس", "ليست", "لست", "بدون", "من دون", "تجنب", "تجنبي", "تجنبوا", "يمنع", "ممنوع", "يحظر", "عدم", "لم", "لن"]
+}

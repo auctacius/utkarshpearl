@@ -1,0 +1,7 @@
+{
+  "language": "zh",
+  "mode": "substring",
+  "status": "STARTER - the Chinese-speaking teammate must review, remove cues that cause false alarms, and add missing ones",
+  "note": "Chinese has no spaces, so a cue counts if it appears anywhere in the sentence. Short cues like the single character for 'not' are left out on purpose because they hide inside many other words.",
+  "cues": ["不要", "请勿", "切勿", "勿", "禁止", "严禁", "不可", "不得", "不能", "不宜", "不应", "不超过", "避免", "没有", "无需", "无须"]
+}
