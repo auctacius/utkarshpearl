@@ -119,6 +119,18 @@ class TestNegation(unittest.TestCase):
         self.assertTrue(checks.has_negation("避免饮酒。", "zh"))
         self.assertFalse(checks.has_negation("每次服用2片，用水送服。", "zh"))
 
+    def test_chinese_not_recommended(self):
+        self.assertFalse(checks.negation_check(
+            "Not recommended for babies under 6 months.",
+            "对于6个月以下的婴儿来说不建议.", "zh",
+        )["flag"])
+
+    def test_chinese_symptoms_do_not_improve(self):
+        self.assertTrue(checks.has_negation("如果您的症状在5天内恶化或不改善,请咨询医生.", "zh"))
+
+    def test_chinese_affirmative_recommendation_has_no_negation(self):
+        self.assertFalse(checks.has_negation("建议咨询医生。", "zh"))
+
     def test_hindi(self):
         self.assertTrue(checks.has_negation("गोली को कुचलें या चबाएं नहीं।", "hi"))
         self.assertTrue(checks.has_negation("शराब से बचें।", "hi"))
@@ -187,10 +199,33 @@ class TestSeedSentences(unittest.TestCase):
             self.assertEqual(int(checks.has_negation(r["src_en"], "en")), int(r["has_negation_en"]), r["sentence_id"])
 
 
-@unittest.skip("STRETCH: enable once target-side number words exist (data/lexicons/numbers_<lang>.json)")
-class TestStretchNumberWords(unittest.TestCase):
+class TestChineseNumberWords(unittest.TestCase):
     def test_chinese_number_words(self):
         self.assertEqual(checks.extract_numbers("每天两次，每次一片。", "zh", use_words=True), [1, 2])
+
+    def test_half_tablet_matches_fraction(self):
+        r = checks.number_check("Take 1/2 tablet.", "服用半片。", "zh")
+        self.assertFalse(r["flag"])
+
+    def test_half_written_as_yiban(self):
+        r = checks.number_check("Take half a tablet in the morning.", "早上服用一半药丸.", "zh")
+        self.assertEqual(r["tgt_numbers"], [0.5])
+        self.assertFalse(r["flag"])
+
+    def test_written_tens_are_compared_as_one_value(self):
+        r = checks.number_check("Use within 24 hours.", "二十四小时内使用。", "zh")
+        self.assertFalse(r["flag"])
+
+    def test_changed_written_frequency_is_flagged(self):
+        r = checks.number_check("Take twice daily.", "每天服用一次。", "zh")
+        self.assertEqual((r["missing"], r["extra"]), ([2], [1]))
+
+    def test_non_quantity_phrases_do_not_add_numbers(self):
+        self.assertEqual(checks.extract_numbers("一旦打开，请一次性使用。", "zh", use_words=True), [])
+
+    def test_default_extractor_still_counts_digits_only(self):
+        self.assertEqual(checks.extract_numbers("每天两次，每次１片。", "zh"), [1])
+
 
 
 if __name__ == "__main__":
