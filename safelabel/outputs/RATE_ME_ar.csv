@@ -1,0 +1,61 @@
+﻿sentence_id,lang,system,src_en,translation,verdict,error_type,corrected_translation,note,rater_id
+S001,ar,nllb600m,Take 2 tablets with a full glass of water.,خذ 2 أقراص مع كوب كامل من الماء.,,,,,ar_
+S002,ar,nllb600m,Take one tablet every 8 hours.,خذ قرصاً واحداً كل 8 ساعات.,,,,,ar_
+S003,ar,nllb600m,Do not take more than 6 tablets in 24 hours.,لا تأخذ أكثر من 6 أقراص في 24 ساعة.,,,,,ar_
+S004,ar,nllb600m,Do not crush or chew the tablets.,لا تحطم الأقراص ولا تضغها.,,,,,ar_
+S005,ar,nllb600m,Take this medicine with food.,خذ هذا الدواء مع الطعام.,,,,,ar_
+S006,ar,nllb600m,"Use for 7 days, even if you feel better.",استخدم لمدة 7 أيام حتى لو شعرت بتحسن,,,,,ar_
+S007,ar,nllb600m,Measure 5 mL with the dosing cup provided.,قياس 5 مل مع كوب الجرعة المقدمة.,,,,,ar_
+S008,ar,nllb600m,Children under 12 years should not take this medicine without asking a doctor.,لا ينبغي للأطفال دون سن 12 عامًا تناول هذا الدواء دون استشارة الطبيب.,,,,,ar_
+S009,ar,nllb600m,Call your doctor if your fever lasts more than 3 days.,اتصل بطبيبك إذا استمرت الحمى لأكثر من 3 أيام.,,,,,ar_
+S010,ar,nllb600m,Store below 25 °C and keep out of the reach of children.,تخزن تحت 25 درجة مئوية و أبقيها خارج نطاق الأطفال.,,,,,ar_
+S011,ar,nllb600m,"If you miss a dose, take it as soon as you remember.",إذا فاتك جرعة، خذها بمجرد أن تتذكر.,,,,,ar_
+S012,ar,nllb600m,Do not take two doses at the same time.,لا تأخذ جرعتين في نفس الوقت.,,,,,ar_
+S013,ar,nllb600m,Apply a thin layer to the affected skin twice a day.,تطبيق طبقة رقيقة على الجلد المتضرر مرتين في اليوم.,,,,,ar_
+S014,ar,nllb600m,For use in the ear only.,للاستخدام في الأذن فقط.,,,,,ar_
+S015,ar,nllb600m,Take half a tablet in the morning.,خذ نصف قرص في الصباح.,,,,,ar_
+S016,ar,nllb600m,Take 1 tablet at 8 a.m. and 1 tablet at 8 p.m.,خذ قرصاً واحداً في الساعة الثامنة صباحاً و قرصاً واحداً في الساعة الثامنة مساءاً.,,,,,ar_
+S017,ar,nllb600m,Take 1 to 2 tablets every 4 to 6 hours as needed.,خذ 1 إلى 2 أقراص كل 4 إلى 6 ساعات حسب الحاجة.,,,,,ar_
+S018,ar,nllb600m,Do not exceed 4 doses in a 24-hour period.,لا تتجاوز 4 جرعات في فترة 24 ساعة.,,,,,ar_
+S019,ar,nllb600m,Avoid alcohol while taking this medicine.,تجنب الكحول أثناء تناول هذا الدواء.,,,,,ar_
+S020,ar,nllb600m,Do not use if you are pregnant or breastfeeding.,لا تستخدم إذا كنت حاملاً أو الرضاعة الطبيعية.,,,,,ar_
+S021,ar,nllb600m,Do not take with other medicines that contain the same active ingredient.,لا تتناول مع أدوية أخرى تحتوي على نفس المكون النشط.,,,,,ar_
+S022,ar,nllb600m,Do not use for more than 3 days without medical advice.,لا تستخدم لأكثر من 3 أيام دون استشارة طبية.,,,,,ar_
+S023,ar,nllb600m,Take 1/2 teaspoon (2.5 mL) twice daily.,خذ 1/2 ملعقة شاي (2. 5 مل) مرتين يومياً.,,,,,ar_
+S024,ar,nllb600m,"Apply the 0.5% cream to clean, dry skin.",تطبيق كريم 0. 5 في المئة على الجلد النظيف والجاف.,,,,,ar_
+S025,ar,nllb600m,Dissolve 1 packet in a glass of water and drink right away.,تذوب 1 حزمة في كوب من الماء وشربها على الفور.,,,,,ar_
+S026,ar,nllb600m,The dose is 10 mL for children weighing 20 to 30 kg.,الجرعة هي 10 مل للأطفال الذين يزنون 20 إلى 30 كجم.,,,,,ar_
+S027,ar,nllb600m,Each tablet contains 20 mg of Zolvera.,كل قرص يحتوي على 20 ملغ من Zolvera.,,,,,ar_
+S028,ar,nllb600m,Take once daily at bedtime.,خذ مرة واحدة يومياً قبل النوم.,,,,,ar_
+S029,ar,nllb600m,Shake the bottle well before each use.,هز الزجاجة بشكل جيد قبل كل استخدام.,,,,,ar_
+S030,ar,nllb600m,Put 2 drops in each eye 3 times a day.,ضع 2 قطرات في كل عين 3 مرات في اليوم.,,,,,ar_
+S031,ar,nllb600m,Wait at least 4 hours between doses.,انتظر 4 ساعات على الأقل بين الجرعات.,,,,,ar_
+S032,ar,nllb600m,Swallow the capsule whole with water.,ابتلع الكبسولة بأكملها بالماء.,,,,,ar_
+S033,ar,nllb600m,Avoid direct sunlight while using this cream.,تجنب أشعة الشمس المباشرة أثناء استخدام هذا الكريم.,,,,,ar_
+S034,ar,nllb600m,This medicine may cause drowsiness. Do not drive or use machines.,قد يسبب هذا الدواء النعاس. لا تقود السيارة ولا تستخدم الآلات.,,,,,ar_
+S035,ar,nllb600m,Keep in the refrigerator between 2 °C and 8 °C.,احتفظ في الثلاجة بين 2 °C و 8 °C.,,,,,ar_
+S036,ar,nllb600m,Do not use after the expiry date printed on the box.,لا تستخدم بعد تاريخ انتهاء الصلاحية المطبوع على الصندوق.,,,,,ar_
+S037,ar,nllb600m,Stop taking this medicine and call your doctor if you develop a rash.,توقف عن تناول هذا الدواء واتصل بطبيبك إذا تظهر طفحته الجلدية.,,,,,ar_
+S038,ar,nllb600m,Take for 10 days. Finish all the tablets.,خذها لمدة 10 أيام، انتهي من كل الحبوب,,,,,ar_
+S039,ar,nllb600m,Not recommended for babies under 6 months.,لا يوصى به للأطفال دون سن 6 أشهر.,,,,,ar_
+S040,ar,nllb600m,Take 1 tablet every 12 hours for 5 days.,خذ قرص واحد كل 12 ساعة لمدة 5 أيام.,,,,,ar_
+S041,ar,nllb600m,"Take 3 tablets on the first day, then 1 tablet a day for 4 days.",خذ 3 أقراص في اليوم الأول، ثم 1 قرص في اليوم لمدة 4 أيام.,,,,,ar_
+S042,ar,nllb600m,Rinse your mouth with water after using the inhaler.,غسلي فمك بالماء بعد استخدام جهاز التنفس.,,,,,ar_
+S043,ar,nllb600m,Use 2 puffs when needed. Do not use more than 8 puffs in 24 hours.,لا تستخدم أكثر من 8 تنفاخات في 24 ساعة.,,,,,ar_
+S044,ar,nllb600m,Take 1 capsule 30 minutes before breakfast.,خذ 1 كبسولة قبل 30 دقيقة من الإفطار.,,,,,ar_
+S045,ar,nllb600m,"Take this medicine on an empty stomach, at least 1 hour before meals.",خذ هذا الدواء على معدة فارغة، قبل ساعة واحدة على الأقل من الوجبات.,,,,,ar_
+S046,ar,nllb600m,Place the tablet under your tongue and let it dissolve.,ضع اللوحة تحت لسانك ودعها تذوب,,,,,ar_
+S047,ar,nllb600m,Do not stop taking this medicine suddenly.,لا تتوقف عن تناول هذا الدواء فجأة.,,,,,ar_
+S048,ar,nllb600m,Your urine may look orange. This is harmless.,قد تبدو البول نارنجيًا، هذا غير ضار.,,,,,ar_
+S049,ar,nllb600m,"Use only the dosing cup, not a kitchen spoon.",استخدم فقط كوب الجرعة، وليس ملعقة المطبخ.,,,,,ar_
+S050,ar,nllb600m,"Take 2 tablets now, then 1 tablet after 12 hours.",خذ 2 أقراص الآن، ثم 1 قرص بعد 12 ساعة.,,,,,ar_
+S051,ar,nllb600m,"If your symptoms get worse or do not improve in 5 days, see a doctor.",إذا ازدادت أعراضك سوءاً أو لم تتحسن بعد 5 أيام، راجع طبيبك.,,,,,ar_
+S052,ar,nllb600m,Give 7.5 mL to a child aged 6 to 11 years.,إعطاء 7. 5 ملي لطفلا تتراوح أعمارهم بين 6 و 11 سنة.,,,,,ar_
+S053,ar,nllb600m,Wash your hands before and after applying the ointment.,اغسل يديك قبل وبعد تطبيق المرهم.,,,,,ar_
+S054,ar,nllb600m,Do not apply to broken skin or near the eyes.,لا تطبق على الجلد المكسور أو بالقرب من العينين.,,,,,ar_
+S055,ar,nllb600m,Take 1 tablet every morning. The tablet strength is 40 mg.,خذ حبوب منع الحمل 1 حبوب منع الحمل كل صباح. قوة حبوب منع الحمل 40 ملغ.,,,,,ar_
+S056,ar,nllb600m,Allow 2 hours between this medicine and antacids.,اترك 2 ساعات بين هذا الدواء و مضادات الحمض.,,,,,ar_
+S057,ar,nllb600m,Tell your doctor about all other medicines you take.,أخبر طبيبك عن جميع الأدوية الأخرى التي تتناولها.,,,,,ar_
+S058,ar,nllb600m,This medicine is for adults over 18 years only.,هذا الدواء ينطبق على البالغين الذين تزيد أعمارهم عن 18 عامًا فقط.,,,,,ar_
+S059,ar,nllb600m,"Take 2 sachets daily, mixed with 200 mL of water.",خذ 2 أكياس يوميًا، مختلطة بـ 200 مل من الماء.,,,,,ar_
+S060,ar,nllb600m,Seek emergency help right away if you have trouble breathing or swelling of the face.,طلب المساعدة الطارئة فوراً إذا كان لديك مشاكل في التنفس أو تورم في الوجه.,,,,,ar_
