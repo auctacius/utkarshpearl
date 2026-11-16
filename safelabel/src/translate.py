@@ -20,6 +20,13 @@ import csv
 import datetime
 from pathlib import Path
 
+try:  # Windows laptops with a company/antivirus certificate: use the system certificate store for downloads
+    import truststore
+
+    truststore.inject_into_ssl()
+except ImportError:  # not needed on Colab
+    pass
+
 ROOT = Path(__file__).resolve().parents[1]
 MODEL_NAME = "facebook/nllb-200-distilled-600M"
 SYSTEM_NAME = "nllb600m"

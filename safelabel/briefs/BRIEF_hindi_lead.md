@@ -33,3 +33,8 @@ Give your AI tool: `AGENTS.md` + `CONTRACT.md` + this file. Use `PLAN.md` yourse
 
 ## Cross-review (15 min at G3)
 Ask the *other* AI tool (Claude ↔ Codex) to read `tools/tie_out.py` and `src/safelabel/checks.py` and list the 5 most likely bugs. Fix only what is real.
+
+## Shortcuts added later
+- Rating: `python tools/make_rating_sheet.py --lang hi`, then open `tools/rate.html` (keyboard rating, validates, exports `ratings_hi.csv`).
+- G3: `python tools/run_g3.py` does the whole merge-check-evaluate chain and stops at the first GAP.
+- Demo: `src/safelabel/predict.py` and `app/app.py` are already written and tested (`python -m unittest discover -s tests`); they need `outputs/thresholds.json` (made by `evaluate.py`) and, for the live button, the NLLB model.

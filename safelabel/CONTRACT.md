@@ -96,7 +96,7 @@ run_all_checks(src_en, tgt, lang) -> {..., "number_flag","negation_flag","any_ru
 #          failures.csv, thresholds.json, figures/*.png   (column names in briefs/BRIEF_arabic_eval.md)
 
 # src/safelabel/predict.py (H)
-check_translation(src_en: str, lang: str, translator=None, thresholds=None) -> dict
+check_translation(src_en: str, lang: str, translator=None, thresholds=None, scorer=None) -> dict   # scorer(src_en, back) -> chrF
 #   keys: lang, src_en, translation, back_translation, verdict ("dont_rely"|"unsure"|"looks_consistent"),
 #         reasons (list[str]), rt_chrf, checks (run_all_checks output), next_step, disclaimer
 #   The app never says "safe". Best verdict text: "no problems found by our checks - still confirm with your pharmacist".

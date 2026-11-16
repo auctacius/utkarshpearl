@@ -69,7 +69,7 @@ git push
 ```
 *Fallback if git is a hassle:* a shared Drive folder with the same layout; everyone uploads only their own files; H downloads and commits at G3.
 
-**G3 merge (H, ~15 min):** pull → `python tools/tie_out.py --all --write --quiet` (must say `ALL CONTROL TOTALS TIE`) → tell C → C runs `python src/run_checks.py` → `python tools/tie_out.py --all --stage features --quiet` → tell A → A runs `python src/evaluate.py`. A `GAP:` line names the file and the missing/odd rows: message the owner with that exact line.
+**G3 merge (H, ~5 min):** pull everyone's files, then run **`python tools/run_g3.py`** (needs `pip install sacrebleu`). It runs, in order, `tie_out --all --write`, `src/run_checks.py`, `tie_out --all --stage features` and `src/evaluate.py`, and stops at the first `GAP:`. Rehearse it any time on fake data with `python tools/make_dummy.py` then `python tools/run_g3.py --outputs outputs_dummy`. A `GAP:` line names the file and the missing/odd rows: message the owner with that exact line.
 
 **Final repo:** `README.md` (write-up) · `PLAN.md` / `CONTRACT.md` (optional to keep) · `data/` · `src/` · `tests/` · `tools/` · `outputs/` (real CSVs, results, figures) · `app/` · `notebooks/SafeLabel_final.ipynb` · `requirements.txt`. Delete `outputs_dummy/`. Make the repo public, check the links in an incognito window.
 

@@ -62,7 +62,11 @@ If a sentence has several errors, pick the **most dangerous** one and list the r
 | Take with food. | Take after eating (natural wording, same action) | `safe` / `none` |
 | Shake the bottle well before use. | Shake the bottle before use ("well" dropped, same action) | `minor` / `other` |
 
-## 5. Making your rating sheet (3 minutes)
+## 5. Making your rating sheet
+
+**Fastest (recommended):** run `python tools/make_rating_sheet.py --lang <lang>` to get `outputs/RATE_ME_<lang>.csv` (your teammate or the lead may already have made it), then open `tools/rate.html` in a browser, choose that file and rate with the keyboard: **S** safe, **M** minor, **U** unsafe, **1-8** error type. Type your initials, click *Download ratings CSV*, and save the file as `outputs/ratings_<lang>.csv`. Then jump to step 6 below. The tool only shows the English and the translation, so you stay blind.
+
+**Or with Google Sheets (3 minutes):**
 
 1. Google Sheets → File → Import → Upload `outputs/translations_<lang>.csv` → *Replace spreadsheet*.
 2. **Delete the `back_translation` column** (this is what keeps you blind). Leave `translation` untouched.

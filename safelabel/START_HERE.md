@@ -19,6 +19,7 @@ medicine-label sentences safe in Hindi, Chinese and Arabic, plus a small warning
    !python tools/tie_out.py --lang <lang> --stage translations --quiet   # must end with: ALL CONTROL TOTALS TIE
    ```
    Then download `outputs/translations_<lang>.csv` from the Colab file panel and send it back (next section).
+5. **Next job — rating (about 90 minutes, by hand):** `python tools/make_rating_sheet.py --lang <lang>`, open `tools/rate.html` in a browser, choose `outputs/RATE_ME_<lang>.csv`, rate every row (**S** safe · **M** minor · **U** unsafe · **1–8** error type), then download the CSV and save it as `outputs/ratings_<lang>.csv`. Details: `data/RATING_GUIDE.md`.
 
 ## Sending files back
 - **GitHub:** on the repo page open the `safelabel/outputs` folder, choose *Add file → Upload files*, drag your CSV in, then *Commit changes*.
