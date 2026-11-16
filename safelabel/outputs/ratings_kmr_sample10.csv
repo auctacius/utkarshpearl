@@ -1,0 +1,11 @@
+sentence_id,lang,system,verdict,error_type,corrected_translation,note,rater_id,src_en,translation
+S001,kmr,nllb600m,safe,none,,verdict given by the rater in chat and typed in unchanged,kmr_A,Take 2 tablets with a full glass of water.,2 tablet bi şûşeyek avê bi temamî bigirin.
+S002,kmr,nllb600m,safe,none,,verdict given by the rater in chat and typed in unchanged,kmr_A,Take one tablet every 8 hours.,Her 8 demjimêrî yek tablet bixwe.
+S003,kmr,nllb600m,minor,other,,"verdict given by the rater in chat and typed in unchanged; rater gave no error type, recorded as other; rater had seen this row's back-translation before rating (not blind)",kmr_A,Do not take more than 6 tablets in 24 hours.,Di 24 demjimêran de bêtirî 6 tabletan bigirin.
+S004,kmr,nllb600m,minor,other,,"verdict given by the rater in chat and typed in unchanged; rater gave no error type, recorded as other",kmr_A,Do not crush or chew the tablets.,Tabletan neşewitîne û neşewitîne.
+S005,kmr,nllb600m,minor,other,,"verdict given by the rater in chat and typed in unchanged; rater gave no error type, recorded as other",kmr_A,Take this medicine with food.,Ev derman ligel xwarinê bixwe.
+S006,kmr,nllb600m,safe,none,,verdict given by the rater in chat and typed in unchanged,kmr_A,"Use for 7 days, even if you feel better.","7 rojan bikar bînin, her çiqas tu baştir bibî."
+S007,kmr,nllb600m,safe,none,,verdict given by the rater in chat and typed in unchanged,kmr_A,Measure 5 mL with the dosing cup provided.,5 ml bi cup dosing dayîn pîvandin.
+S008,kmr,nllb600m,safe,none,,verdict given by the rater in chat and typed in unchanged,kmr_A,Children under 12 years should not take this medicine without asking a doctor.,Zarokên di bin 12 salî de divê vê dermanê bêyî ku ji doktorê re bipirsin qebûl neke.
+S009,kmr,nllb600m,minor,other,,"verdict given by the rater in chat and typed in unchanged; rater gave no error type, recorded as other",kmr_A,Call your doctor if your fever lasts more than 3 days.,"Eger germîya we ji 3 rojan zêdetir bimîne, bi doktorê xwe re biaxivin."
+S010,kmr,nllb600m,minor,other,,"verdict given by the rater in chat and typed in unchanged; rater gave no error type, recorded as other",kmr_A,Store below 25 °C and keep out of the reach of children.,Di bin 25 °C de bêne peydakirin û ji destê zarokan re nehêlin.
